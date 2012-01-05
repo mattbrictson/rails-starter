@@ -17,8 +17,6 @@ development:
   encoding: unicode
   database: rails-starter_development
   pool: 5
-  username: rails-starter
-  password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,13 +41,9 @@ test:
   encoding: unicode
   database: rails-starter_test
   pool: 5
-  username: rails-starter
-  password:
 
 production:
   adapter: postgresql
   encoding: unicode
   database: rails-starter_production
   pool: 5
-  username: rails-starter
-  password:
