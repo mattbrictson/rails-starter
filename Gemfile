@@ -31,8 +31,8 @@ end
 # Note that some of these are also used in :development for Rails generators.
 #
 group :test do
-  gem 'capybara',                :group => [:development, :test]
+  gem 'factory_girl_rails',             :group => :development
   gem 'launchy'
-  gem 'rspec-rails',             :group => [:development, :test]
-  gem 'turn',        '~> 0.8.3', :require => false
+  gem 'steak',                          :group => :development
+  gem 'turn',               '~> 0.8.3', :require => false
 end

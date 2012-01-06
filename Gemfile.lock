@@ -67,6 +67,11 @@ GEM
     eventmachine (0.12.10)
     execjs (1.2.13)
       multi_json (~> 1.0)
+    factory_girl (2.3.2)
+      activesupport
+    factory_girl_rails (1.4.0)
+      factory_girl (~> 2.3.0)
+      railties (>= 3.0.0)
     ffi (1.0.11)
     fssm (0.2.8)
     guard (0.10.0)
@@ -156,6 +161,9 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    steak (2.0.0)
+      capybara (>= 1.0.0)
+      rspec-rails (>= 2.5.0)
     thin (1.3.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -180,17 +188,17 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   capistrano (~> 2.5.19)
-  capybara
   coffee-rails (~> 3.1.1)
   compass (>= 0.12.alpha.1)
+  factory_girl_rails
   guard-rspec
   jquery-rails
   launchy
   pg
   rails (= 3.1.3)
   rb-fsevent
-  rspec-rails
   sass-rails (~> 3.1.5)
+  steak
   thin
   turn (~> 0.8.3)
   uglifier (>= 1.0.3)

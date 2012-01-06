@@ -47,5 +47,11 @@ module RailsStarter
     
     # Compass (see https://gist.github.com/1184843)
     config.assets.precompile << /(^[^_]|\/[^_])[^\/]*/
+    
+    # Rspec and factory_girl (see https://gist.github.com/989132)
+    config.generators do |g|
+      g.test_framework :rspec, :views => false, :fixture => true
+      g.fixture_replacement :factory_girl, :dir => 'spec/factories'
+    end
   end
 end
