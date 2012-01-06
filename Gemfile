@@ -24,6 +24,7 @@ group :development do
   gem 'capistrano',  '~> 2.5.19', :require => false
   gem 'rb-fsevent',               :require => false
   gem 'guard-rspec',              :require => false
+  gem 'thin',                     :require => false
 end
 
 # Gems needed for running tests.
