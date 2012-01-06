@@ -23,6 +23,11 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 4. Run `bundle install --path .bundle/bundle`
 5. Once more, run `rbenv rehash`.
 6. Consider installing [this handy bash script][r].
+7. Globally replace `rails-starter` and `RailsStarter` with the desired name of your project.
+8. Run `rake db:create` to initialize the database (make sure postgres is started first).
+9. Run `rake db:migrate`.
+10. Run `rake spec` to make sure everything works.
+11. Run `rails s thin` to start the app.
 
 ## Thanks to…
 
