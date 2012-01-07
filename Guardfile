@@ -13,7 +13,7 @@ guard 'rspec', :version => 2 do
   watch(%r{^spec/support/(.+)\.rb$})                  { "spec" }
   watch('config/routes.rb')                           { "spec/routing" }
   watch('app/controllers/application_controller.rb')  { "spec/controllers" }
-  # Capybara request specs
-  watch(%r{^app/views/(.+)/.*\.(erb|haml)$})          { |m| "spec/requests/#{m[1]}_spec.rb" }
+  # Steak acceptance specs
+  watch(%r{^app/views/(.+)/.*\.(erb|haml)$})          { |m| "spec/acceptance/#{m[1]}_spec.rb" }
 end
 
