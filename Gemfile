@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'rails',       '3.2.0'
 # gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'thin',        :require => false
 
 
 # Gems used only for assets and not required
@@ -28,7 +29,6 @@ group :development do
   gem 'rb-fsevent',               :require => false
   gem 'guard-rspec',              :require => false
   gem 'ruby_gntp',                :require => false
-  gem 'thin',                     :require => false
 end
 
 # Gems needed for running tests.
