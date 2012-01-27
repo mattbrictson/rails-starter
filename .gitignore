@@ -16,3 +16,6 @@
 
 # TextMate 2 project files.
 .tm_properties
+
+# Ignore results of `rake assets:precompile`
+/public/assets/
