@@ -4,7 +4,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'jbuilder' # Jbuilder templates for JSON
 gem 'jquery-rails'
 gem 'pg'
-gem 'rails',       '3.2.1'
+gem 'rails',       '3.2.2'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'thin',        :require => false
 
