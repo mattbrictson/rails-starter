@@ -4,7 +4,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'jbuilder' # Jbuilder templates for JSON
 gem 'jquery-rails'
 gem 'pg'
-gem 'rails',       '3.2.2'
+gem 'rails',       '3.2.3'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'thin',        :require => false
 
@@ -18,7 +18,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier',     '>= 1.0.3'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
+  # gem 'therubyracer', :platform => :ruby
 end
 
 # Gems that facilitate development but are not required to run the app.
