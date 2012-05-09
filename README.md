@@ -28,7 +28,7 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 8. Run `rake db:create` to initialize the database (make sure postgres is started first).
 9. Run `rake db:migrate`.
 10. Run `rake spec` to make sure everything works.
-11. Run `rails s thin` to start the app.
+11. Run `rails s` to start the app.
 
 ## Thanks to…
 
