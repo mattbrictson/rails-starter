@@ -18,7 +18,7 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 ## Rails
 
 1. Download and extract [the tarball of this repository][tarball]; this will be the start of your new Rails project.
-2. `cd` into the project and install bundler: `gem install bundler -v 1.1.rc.7`
+2. `cd` into the project and install bundler: `gem install bundler`
 3. Run `rbenv rehash`.
 4. Run `bundle install --path .bundle/bundle`
 5. Once more, run `rbenv rehash`.
