@@ -24,6 +24,7 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 5. Once more, run `rbenv rehash`.
 6. Consider installing [this handy bash script][r].
 7. Globally replace `rails-starter` and `RailsStarter` with the desired name of your project.
+7. Run `rake secret` and use the resulting value to replace the one in `config/initializers/secret_token.rb`.
 8. Run `rake db:create` to initialize the database (make sure postgres is started first).
 9. Run `rake db:migrate`.
 10. Run `rake spec` to make sure everything works.
