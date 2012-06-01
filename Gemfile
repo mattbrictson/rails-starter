@@ -25,10 +25,10 @@ end
 # Note `:require => false` for those gems that are purely command-line tools.
 #
 group :development do
-  gem 'capistrano',  '~> 2.5.19', :require => false
-  gem 'rb-fsevent',               :require => false
-  gem 'guard-rspec',              :require => false
-  gem 'ruby_gntp',                :require => false
+  gem 'capistrano',  :require => false
+  gem 'rb-fsevent',  :require => false
+  gem 'guard-rspec', :require => false
+  gem 'ruby_gntp',   :require => false
 end
 
 # Gems needed for running tests.
