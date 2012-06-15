@@ -5,7 +5,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'jbuilder' # Jbuilder templates for JSON
 gem 'jquery-rails'
 gem 'pg'
-gem 'rails',       '3.2.5'
+gem 'rails',       '3.2.6'
 gem 'thin',        :require => false
 
 
