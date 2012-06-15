@@ -1,12 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'cancan'
 # gem 'debugger'
+gem 'draper'
+gem 'haml-rails'
+gem 'informal'
 # gem 'jbuilder' # Jbuilder templates for JSON
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails',       '3.2.6'
-gem 'thin',        require: false
 
 
 # Gems used only for assets and not required
@@ -26,9 +29,12 @@ end
 #
 group :development do
   gem 'capistrano',  require: false
+  gem 'letter_opener'
   gem 'rb-fsevent',  require: false
   gem 'guard-rspec', require: false
+  gem 'powder',      require: false
   gem 'ruby_gntp',   require: false
+  gem 'vendorer',    require: false
 end
 
 # Gems needed for running tests.
@@ -38,4 +44,11 @@ group :test do
   gem 'factory_girl_rails', group: :development
   gem 'launchy'
   gem 'steak',              group: :development
+end
+
+# Gems needed in production environments only.
+#
+group :production, :staging do
+  gem 'simple_postmark'
+  gem 'unicorn', require: false
 end
