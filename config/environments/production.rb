@@ -48,8 +48,18 @@ RailsStarter::Application.configure do
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
 
-  # Disable delivery errors, bad email addresses will be ignored
-  # config.action_mailer.raise_delivery_errors = false
+  # Production mailer config
+  config.action_mailer.delivery_method = :simple_postmark
+  config.to_prepare do
+    ActionMailer::Base.simple_postmark_settings = {
+      api_key: 'xxxxxxxx'
+    }
+  end
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = {
+    host: 'rails-starter.com',
+    protocol: 'http' # or 'https' for a secured app
+  }
 
   # Enable threaded mode
   # config.threadsafe!
