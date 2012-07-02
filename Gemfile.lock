@@ -130,6 +130,8 @@ GEM
     polyglot (0.3.3)
     powder (0.1.8)
       thor (>= 0.11.5)
+    quiet_assets (1.0.1)
+      railties (~> 3.1)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -235,6 +237,7 @@ DEPENDENCIES
   letter_opener
   pg
   powder
+  quiet_assets
   rails (= 3.2.6)
   rb-fsevent
   ruby_gntp

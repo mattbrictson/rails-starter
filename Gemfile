@@ -33,6 +33,7 @@ group :development do
   gem 'rb-fsevent',  require: false
   gem 'guard-rspec', require: false
   gem 'powder',      require: false
+  gem 'quiet_assets'
   gem 'ruby_gntp',   require: false
   gem 'vendorer',    require: false
 end
