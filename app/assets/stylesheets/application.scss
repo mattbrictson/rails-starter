@@ -1,5 +1,5 @@
 /*
- * Application-wide styles that will be compiled and merged via compass and sprockets.
- * Note you must use compass-style @import instead of sprocket-style //= require.
+ * Application-wide styles that will be compiled and merged via sass and
+ * sprockets. Note you must use sass-style @import instead of sprocket-style
+ * //= require if you want mixins and variables to work across files.
  */
-@import "compass/css3";
