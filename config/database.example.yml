@@ -16,6 +16,7 @@ development:
   adapter: postgresql
   encoding: unicode
   database: rails-starter_development
+  min_messages: WARNING
   pool: 5
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -40,10 +41,5 @@ test:
   adapter: postgresql
   encoding: unicode
   database: rails-starter_test
-  pool: 5
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: rails-starter_production
+  min_messages: WARNING
   pool: 5
