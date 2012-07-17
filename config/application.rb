@@ -59,8 +59,9 @@ module RailsStarter
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    # Compass (see https://gist.github.com/1184843#gistcomment-53687)
-    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+    # Precompile more than just application.css
+    # (see https://gist.github.com/1184843#gistcomment-53687)
+    # config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
     # Speed up precompiling by partially loading the application
     config.assets.initialize_on_precompile = false
