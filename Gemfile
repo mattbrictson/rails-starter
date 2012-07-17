@@ -1,27 +1,32 @@
 source 'https://rubygems.org'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'cancan'
-# gem 'debugger'
 gem 'draper'
-gem 'haml-rails'
-gem 'informal'
-# gem 'jbuilder' # Jbuilder templates for JSON
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails',       '3.2.6'
+
+# Other gems to consider
+# gem 'cancan'
+# gem 'devise'
+# gem 'haml-rails'
+# gem 'informal'
+# gem 'jbuilder'
+# gem 'kaminari'
 
 
 # Gems used only for assets and not required
 # in production environments by default.
 #
 group :assets do
-  gem 'compass-rails','~> 1.0.0.rc.2'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier',     '>= 1.0.3'
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', platforms: :ruby
+
+  # Other asset pipeline gems to consider
+  # gem 'bootstrap-sass'
+  # gem 'bourbon'
+  # gem 'compass-rails'
 end
 
 # Gems that facilitate development but are not required to run the app.
@@ -36,6 +41,11 @@ group :development do
   gem 'quiet_assets'
   gem 'ruby_gntp',   require: false
   gem 'vendorer',    require: false
+
+  # Other development gems to consider
+  # gem 'brakeman',  require: false
+  # gem 'debugger'
+  # gem 'rails-erd'
 end
 
 # Gems needed for running tests.
