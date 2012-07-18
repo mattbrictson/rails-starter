@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>RailsStarter</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <%# CSS should go closest to the top of the document as possible. %>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= csrf_meta_tags %>
+    <%= yield(:head) %>
 
-<%= yield %>
+    <title>
+      <%= yield(:title) + " | " if content_for?(:title) %>
+      RailsStarter
+    </title>
+  </head>
+  <body>
 
-</body>
+    <%= yield %>
+
+    <%# JavaScript goes at the end of the body, for performance. %>
+    <%= javascript_include_tag "application" %>
+    <%= yield(:javascript) %>
+  </body>
 </html>
