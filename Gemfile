@@ -4,7 +4,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'draper'
 gem 'jquery-rails'
 gem 'pg'
-gem 'rails', '3.2.7'
+gem 'rails', '3.2.8'
 
 # Other gems to consider
 # gem 'cancan'
