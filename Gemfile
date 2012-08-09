@@ -13,6 +13,7 @@ gem 'rails', '3.2.8'
 # gem 'informal'
 # gem 'jbuilder'
 # gem 'kaminari'
+# gem 'rack-mini-profiler'
 # gem 'simple_form'
 
 
