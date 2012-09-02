@@ -42,6 +42,7 @@ group :development do
   gem 'powder',      require: false
   gem 'quiet_assets'
   gem 'ruby_gntp',   require: false
+  gem 'thin',        require: false
   gem 'vendorer',    require: false
 
   # Other development gems to consider
