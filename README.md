@@ -36,7 +36,7 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 ## Thanks to…
 
 * Jim Myhberg for [his helpful rbenv/bundler blog post][jim].
-* Ryan Bates for [nifty_config][nifty], which inspired the `secrets.yml` system used by this project.
+* Ryan Bates for [nifty_config][nifty], which inspired the `secrets.yml` system used by this project; and for the [Capistrano Recipes episode of RailsCasts (#337)][cast337], which I have used almost verbatim.
 
 [rbenv-install]:https://github.com/sstephenson/rbenv#section_2
 [ruby-build-install]:https://github.com/sstephenson/ruby-build#readme
@@ -45,3 +45,4 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 [r]:http://blog.55minutes.com/post/15353228566/invoke-rails-and-rake-faster-and-with-fewer-mistakes
 [jim]:http://jimeh.me/blog/2011/11/01/my-ruby-development-environment/
 [nifty]:https://github.com/ryanb/nifty-generators/blob/master/rails_generators/nifty_config/USAGE
+[cast337]:http://railscasts.com/episodes/337-capistrano-recipes
