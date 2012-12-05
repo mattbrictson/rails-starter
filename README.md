@@ -30,6 +30,7 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 8. Run `cp config/database.example.yml config/database.yml` to make a local version of the database config.
 8. Run `rake db:create` to initialize the database (make sure postgres is started first).
 9. Run `rake db:migrate`.
+10. Commit the generated schema: `git add db && git commit -m "Create schema with db:migrate"`
 10. Run `rake spec` to make sure everything works.
 11. Run `rails s` to start the app.
 
