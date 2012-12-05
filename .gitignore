@@ -14,5 +14,6 @@
 # Ignore results of `rake assets:precompile`
 /public/assets/
 
-# Never check database passwords into source control!
+# Never check passwords into source control!
 /config/database.yml
+/config/secrets.yml
