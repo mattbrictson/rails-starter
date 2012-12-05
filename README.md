@@ -35,7 +35,7 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 
 ## Capistrano
 
-Several Capistrano recipes are provided out of the box, mostly taken from [RailsCasts #337][cast337]. These recipes assume you will deploy to Ubuntu 12.04. To use them, first make the following edits:
+Several Capistrano recipes are provided out of the box, mostly taken from [RailsCasts #337][cast337]. These recipes assume you will deploy to Ubuntu 12.04 using nginx, unicorn, postgresql, and rbenv. To use them, first make the following edits:
 
 1. Edit the `:repository` in `config/deploy.rb` to point to your own repository.
 2. Change the hostnames in `config/deploy/{production,staging}.rb` to match your servers.
