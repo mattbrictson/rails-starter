@@ -18,13 +18,15 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 ## Rails
 
 1. Download and extract [the tarball of this repository][tarball]; this will be the start of your new Rails project.
-2. `cd` into the project and install bundler: `gem install bundler`
+1. Globally replace `rails-starter` and `RailsStarter` with the desired name of your project.
+1. `cd` into the project and run `git init && git add . && git commit -m "init"` to initialize a git repository.
+2. Install bundler: `gem install bundler`
 3. Run `rbenv rehash`.
 4. Run `bundle install --path .bundle/bundle`
 5. Once more, run `rbenv rehash`.
 6. Consider installing [this handy bash script][r].
-7. Globally replace `rails-starter` and `RailsStarter` with the desired name of your project.
-7. Run `rake secret` and use the resulting value to replace the one in `config/initializers/secret_token.rb`.
+7. Run `cp config/secrets.example.yml config/secrets.yml` to make a local version of the secret settings.
+7. Run `rake secret` and use the resulting value to replace the one in `config/secrets.yml`.
 8. Run `cp config/database.example.yml config/database.yml` to make a local version of the database config.
 8. Run `rake db:create` to initialize the database (make sure postgres is started first).
 9. Run `rake db:migrate`.
@@ -34,6 +36,7 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 ## Thanks to…
 
 * Jim Myhberg for [his helpful rbenv/bundler blog post][jim].
+* Ryan Bates for [nifty_config][nifty], which inspired the `secrets.yml` system used by this project.
 
 [rbenv-install]:https://github.com/sstephenson/rbenv#section_2
 [ruby-build-install]:https://github.com/sstephenson/ruby-build#readme
@@ -41,3 +44,4 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 [tarball]:https://github.com/mbrictson/rails-starter/tarball/master
 [r]:http://blog.55minutes.com/post/15353228566/invoke-rails-and-rake-faster-and-with-fewer-mistakes
 [jim]:http://jimeh.me/blog/2011/11/01/my-ruby-development-environment/
+[nifty]:https://github.com/ryanb/nifty-generators/blob/master/rails_generators/nifty_config/USAGE
