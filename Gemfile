@@ -70,6 +70,7 @@ end
 # Gems needed in production environments only.
 #
 group :production, :staging do
+  gem 'exception_notification'
   gem 'simple_postmark'
   gem 'unicorn', require: false
 end

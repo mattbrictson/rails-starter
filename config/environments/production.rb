@@ -74,4 +74,13 @@ RailsStarter::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  # Send error email whenever uncaught exception occurs in production
+  config.middleware.use ExceptionNotifier,
+    :email_prefix => "[#{Rails.env.to_s.upcase}] ",
+    :sender_address => %Q{"RailsStarter errors" <support@rails-starter.com>},
+    :exception_recipients => %w(support@rails-starter.com),
+    :sections => %w{version} + ExceptionNotifier::Notifier.default_sections,
+    :background_sections => %w{version} + ExceptionNotifier::Notifier.default_background_sections,
+    :email_format => :html
 end
