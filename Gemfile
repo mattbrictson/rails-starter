@@ -2,18 +2,22 @@ source 'https://rubygems.org'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'draper'
+gem 'ie_conditional_tag'
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '3.2.9'
 
 # Other gems to consider
+# gem 'activeadmin', '0.5.1' # `rails g active_admin:assets` when upgrading
 # gem 'cancan'
 # gem 'devise'
-# gem 'haml-rails'
+# gem 'dragonfly'
+# gem 'friendly_id'
 # gem 'informal'
 # gem 'jbuilder'
 # gem 'kaminari'
 # gem 'rack-mini-profiler'
+# gem 'redcarpet'
 # gem 'simple_form'
 
 
@@ -29,12 +33,15 @@ group :assets do
   # gem 'bootstrap-sass'
   # gem 'bourbon'
   # gem 'compass-rails'
+  # gem 'neat'
 end
 
 # Gems that facilitate development but are not required to run the app.
 # Note `require: false` for those gems that are purely command-line tools.
 #
 group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'capistrano',  require: false
   gem 'letter_opener'
   gem 'rb-fsevent',  require: false
