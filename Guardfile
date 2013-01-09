@@ -17,3 +17,12 @@ guard 'rspec' do
   watch(%r{^app/views/(.+)/.*\.(erb|haml)$})          { |m| "spec/acceptance/#{m[1]}_spec.rb" }
 end
 
+# Run just the livereload monitor with: `guard -P livereload`
+guard 'livereload' do
+  watch(%r{app/views/.+\.(erb|haml|slim)$})
+  watch(%r{app/helpers/.+\.rb})
+  watch(%r{public/.+\.(css|js|html)})
+  watch(%r{config/locales/.+\.yml})
+  # Rails Assets Pipeline
+  watch(%r{(app|lib|vendor)(/assets/\w+/(.+\.(css|js))).*}) { |m| "/assets/#{m[3]}" }
+end
