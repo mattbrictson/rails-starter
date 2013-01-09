@@ -42,15 +42,17 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'capistrano',  require: false
+  gem 'capistrano',       require: false
+  gem 'guard-livereload', require: false
+  gem 'guard-rspec',      require: false
   gem 'letter_opener'
-  gem 'rb-fsevent',  require: false
-  gem 'guard-rspec', require: false
-  gem 'powder',      require: false
+  gem 'powder',           require: false
   gem 'quiet_assets'
-  gem 'ruby_gntp',   require: false
-  gem 'thin',        require: false
-  gem 'vendorer',    require: false
+  gem 'rack-livereload'
+  gem 'rb-fsevent',       require: false
+  gem 'ruby_gntp',        require: false
+  gem 'thin',             require: false
+  gem 'vendorer',         require: false
 
   # Other development gems to consider
   # gem 'brakeman',  require: false
