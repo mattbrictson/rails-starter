@@ -1,4 +1,4 @@
-set_default(:ruby_version) { File.read(File.expand_path("../../../.rbenv-version", __FILE__)).strip }
+set_default(:ruby_version) { File.read(File.expand_path("../../../.ruby-version", __FILE__)).strip }
 
 namespace :rbenv do
   desc "Install rbenv, Ruby, and the Bundler gem"
