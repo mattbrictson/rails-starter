@@ -242,6 +242,9 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
+    turbo-sprockets-rails3 (0.3.6)
+      railties (> 3.2.8, < 4.0.0)
+      sprockets (>= 2.0.0)
     twitter-stream (0.1.16)
       eventmachine (>= 0.12.8)
       http_parser.rb (~> 0.5.1)
@@ -289,6 +292,7 @@ DEPENDENCIES
   steak
   terminal-notifier-guard
   thin
+  turbo-sprockets-rails3
   uglifier (>= 1.0.3)
   unicorn
   vendorer
