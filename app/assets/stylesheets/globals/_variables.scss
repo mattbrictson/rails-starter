@@ -1,0 +1,51 @@
+// _VARIABLES.SCSS
+// Variables used across multiple stylesheets
+// --------------------------------------------------------------------------
+
+// Tip: if a variable is only used by a single module, define it inside that
+// module. Reserve globals/_variables.scss for things that are truly global.
+
+
+// TYPOGRAPHY
+// ----------
+
+// Tip: use shorthand names like $serif and $sans-serif for font stacks to
+// keep stylesheets DRY and allow easy changes to fonts in the future.
+
+$serif: Georgia, serif;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Tip: define a concise array of font sizes that are used throughout your
+// stylesheets to keep your typography consistent. For example this is a
+// "golden scale" of five sizes that work well together, generated using
+// http://www.pearsonified.com/typography/
+
+$title-font-size: 42px;
+$headline-font-size: 26px;
+$sub-headline-font-size: 20px;
+$base-font-size: 16px;
+$small-font-size: 13px;
+
+// Tip: for a pleasing vertical rhythm, set all of your vertical spacing
+// (margins, paddings, and line-heights) using multiples of a globally defined
+// $baseline. (Be careful: implementing vertical rhythm to 100% perfection is
+// extremely difficult in practice, and probably not worth the effort.)
+// http://coding.smashingmagazine.com/2012/12/17/css-baseline-the-good-the-bad-and-the-ugly/
+
+$baseline: 25px;
+$base-line-height: ($baseline/$base-font-size);
+
+// Tip: line-height for headings is tricky: if a heading wraps onto multiple
+// lines, the default line-height will usually be too large. A value of 1.1
+// or 1.2 works well for multi-line headings.
+
+$heading-line-height: 1.2;
+
+
+
+// COLORS
+// ------
+
+// Tip: Use a dark shade rather than pure black, which is too harsh
+
+$near-black: #252423;

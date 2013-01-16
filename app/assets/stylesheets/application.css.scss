@@ -1,19 +1,4 @@
-/*
- * Application-wide styles that will be compiled and merged via sass and
- * sprockets.
- *
- * Note you must use sass-style @import instead of sprocket-style //= require
- * if you want mixins and variables to work across files.
- */
-
-// If using bourbon
-// @import "bourbon";
-
-// If using compass-rails
-// @import "compass";
-
-// If using bootstrap-sass
-// $iconSpritePath: asset-url('glyphicons-halflings.png', image);
-// $iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
-// @import "bootstrap";
-// @import "bootstrap-responsive";
+//= require normalize
+//= require ./base
+//= require ./layout
+//= require_tree ./modules

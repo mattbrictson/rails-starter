@@ -1,0 +1,22 @@
+@import "globals/all";
+
+// BASE.CSS
+// Defines default styles for HTML elements
+// --------------------------------------------------------------------------
+
+// Tip: only define styles that you don't plan on overriding elsewhere.
+// See "Undoing styles" in http://csswizardry.com/2012/11/code-smells-in-css/
+
+html {
+  color: $near-black;
+  font-size: $base-font-size;
+  font-family: Georgia, serif;
+  line-height: $base-line-height;
+}
+
+p {
+  margin: {
+    top: 0;
+    bottom: $baseline;
+  };
+}
