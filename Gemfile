@@ -6,6 +6,7 @@ gem 'ie_conditional_tag'
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '3.2.11'
+gem 'turbolinks'
 
 # Other gems to consider
 # gem 'activeadmin', '0.5.1' # `rails g active_admin:assets` when upgrading

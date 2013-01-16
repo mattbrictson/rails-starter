@@ -245,6 +245,8 @@ GEM
     turbo-sprockets-rails3 (0.3.6)
       railties (> 3.2.8, < 4.0.0)
       sprockets (>= 2.0.0)
+    turbolinks (1.0.0)
+      coffee-rails
     twitter-stream (0.1.16)
       eventmachine (>= 0.12.8)
       http_parser.rb (~> 0.5.1)
@@ -293,6 +295,7 @@ DEPENDENCIES
   terminal-notifier-guard
   thin
   turbo-sprockets-rails3
+  turbolinks
   uglifier (>= 1.0.3)
   unicorn
   vendorer
