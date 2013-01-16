@@ -194,7 +194,6 @@ GEM
       rspec-core (~> 2.12.0)
       rspec-expectations (~> 2.12.0)
       rspec-mocks (~> 2.12.0)
-    ruby_gntp (0.3.4)
     rubyzip (0.9.9)
     sass (3.2.5)
     sass-rails (3.2.5)
@@ -221,6 +220,7 @@ GEM
     steak (2.0.0)
       capybara (>= 1.0.0)
       rspec-rails (>= 2.5.0)
+    terminal-notifier-guard (1.5.3)
     thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -280,10 +280,10 @@ DEPENDENCIES
   rack-livereload
   rails (= 3.2.11)
   rb-fsevent
-  ruby_gntp
   sass-rails (~> 3.2.3)
   simple_postmark
   steak
+  terminal-notifier-guard
   thin
   uglifier (>= 1.0.3)
   unicorn
