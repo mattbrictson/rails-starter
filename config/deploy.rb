@@ -17,7 +17,6 @@ require 'capistrano/ext/multistage'
 
 load "config/recipes/base"
 
-load "config/recipes/cron"
 load "config/recipes/nginx"
 load "config/recipes/nodejs"
 load "config/recipes/postgresql"
