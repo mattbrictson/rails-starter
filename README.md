@@ -1,7 +1,7 @@
 # Goals of this repository
 
 * For each version of Rails (or at least, the versions I care about), I will regenerate the project using `rails new -d postgresql`, then commit and tag the result under the name `rails-new-v[VERSION]`. This gives me a nice history of what has changed out of the box with each Rails release, which I can then cherry-pick when I wish to upgrade existing apps. These pristine `rails new` results will always be done in the `rails-new` branch of this repository.
-* I will further enhance the standard output of `rails new` by trying to incorporate the "best practices of the moment" for `rbenv`, `bundler`, testing, and deployment to Ubuntu 12.04 via Capistrano. In other words, create a good foundation to be used for quickly starting new Rails projects. These enhancements will be done in `master`.
+* I will further enhance the standard output of `rails new` by trying to incorporate the "best practices of the moment" for [SMACSS](http://smacss.com/), `rbenv`, `bundler`, testing, and deployment to Ubuntu 12.04 via Capistrano. In other words, create a good foundation to be used for quickly starting new Rails projects. These enhancements will be done in `master`.
 
 # Starting a new rails project from this foundation
 
