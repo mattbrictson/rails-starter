@@ -66,9 +66,9 @@ module RailsStarter
     # Speed up precompiling by partially loading the application
     config.assets.initialize_on_precompile = false
 
-    # Rspec and factory_girl (see https://gist.github.com/989132)
+    # Rspec and factory_girl
     config.generators do |g|
-      g.test_framework :rspec, :views => false, :fixture => true
+      g.test_framework :rspec, :view_specs => false, :routing_specs => false
       g.fixture_replacement :factory_girl, :dir => 'spec/factories'
     end
 
