@@ -71,5 +71,10 @@ module RailsStarter
       g.test_framework :rspec, :views => false, :fixture => true
       g.fixture_replacement :factory_girl, :dir => 'spec/factories'
     end
+
+    # Disable generators we don't need
+    config.generators.stylesheets = false
+    config.generators.javascripts = false
+    config.generators.helper = false
   end
 end
