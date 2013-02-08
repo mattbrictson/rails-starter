@@ -11,8 +11,8 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 
 1. Install `rbenv` into `~/.rbenv` by following [these instructions][rbenv-install].
 2. [Install `ruby-build`][ruby-build-install].
-3. Run `rbenv install 1.9.3-p327`; this will take several minutes.
-4. Optional: make 1.9.3-p327 your default ruby by running `rbenv global 1.9.3-p327`.
+3. Run `rbenv install 1.9.3-p385`; this will take several minutes.
+4. Optional: make 1.9.3-p385 your default ruby by running `rbenv global 1.9.3-p385`.
 5. [Install `rbenv-bundler`][rbenv-bundler-install].
 
 ## Rails
