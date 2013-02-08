@@ -68,7 +68,10 @@ module RailsStarter
 
     # Rspec and factory_girl
     config.generators do |g|
-      g.test_framework :rspec, :view_specs => false, :routing_specs => false
+      g.test_framework :rspec, :view_specs => false,
+                               :controller_specs => false,
+                               :request_specs => false,
+                               :routing_specs => false
       g.fixture_replacement :factory_girl, :dir => 'spec/factories'
     end
 
