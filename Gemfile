@@ -66,9 +66,10 @@ end
 # Note that some of these are also used in :development for Rails generators.
 #
 group :test do
+  gem 'capybara'
   gem 'factory_girl_rails', group: :development
   gem 'launchy'
-  gem 'steak',              group: :development
+  gem 'rspec-rails',        group: :development
 end
 
 # Gems needed in production environments only.

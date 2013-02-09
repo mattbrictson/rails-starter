@@ -210,9 +210,6 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    steak (2.0.0)
-      capybara (>= 1.0.0)
-      rspec-rails (>= 2.5.0)
     terminal-notifier-guard (1.5.3)
     terminal-table (1.4.5)
     thin (1.5.0)
@@ -251,6 +248,7 @@ DEPENDENCIES
   binding_of_caller
   bourbon
   capistrano
+  capybara
   coffee-rails (~> 3.2.1)
   draper
   exception_notification
@@ -267,9 +265,9 @@ DEPENDENCIES
   rack-livereload
   rails (= 3.2.11)
   rb-fsevent
+  rspec-rails
   sass-rails (~> 3.2.3)
   simple_postmark
-  steak
   terminal-notifier-guard
   thin
   turbo-sprockets-rails3
