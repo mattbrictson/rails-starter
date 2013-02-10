@@ -1,4 +1,4 @@
-require 'features/features_helper'
+require 'spec_helper'
 
 feature 'Home' do
 
