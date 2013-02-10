@@ -1,5 +1,0 @@
-NORMALIZE = '2.1.0'
-
-folder 'vendor/assets/stylesheets' do
-  file 'normalize.css', "http://necolas.github.com/normalize.css/#{NORMALIZE}/normalize.css"
-end

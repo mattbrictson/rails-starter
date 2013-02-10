@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby',  '~> 3.0.0'
 gem 'draper'
 gem 'ie_conditional_tag'
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.2.1'
 gem 'pg'
-gem 'rails', '3.2.11'
+gem 'rails',        '3.2.11'
 gem 'turbolinks'
 
 # Other gems to consider
@@ -27,14 +27,16 @@ gem 'turbolinks'
 #
 group :assets do
   gem 'bourbon'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails',    '~> 3.2.1'
+  gem 'normalize-rails', '~> 2.0.1'
+  gem 'sass-rails',      '~> 3.2.3'
   gem 'turbo-sprockets-rails3'
-  gem 'uglifier',     '>= 1.0.3'
+  gem 'uglifier',        '>= 1.0.3'
 
   # Other asset pipeline gems to consider
   # gem 'bootstrap-sass'
   # gem 'compass-rails'
+  # gem 'jquery-ui-rails', '~> 4.0.1'
   # gem 'neat'
 end
 
@@ -54,12 +56,12 @@ group :development do
   gem 'rb-fsevent',              require: false
   gem 'terminal-notifier-guard', require: false
   gem 'thin',                    require: false
-  gem 'vendorer',                require: false
 
   # Other development gems to consider
   # gem 'brakeman',  require: false
   # gem 'debugger'
   # gem 'rails-erd'
+  # gem 'vendorer'
 end
 
 # Gems needed for running tests.
