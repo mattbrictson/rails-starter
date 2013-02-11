@@ -63,7 +63,7 @@ Now to deploy to a brand new staging environment, these steps should work:
 * Jim Myhberg for [his helpful rbenv/bundler blog post][jim].
 * Ryan Bates for [nifty_config][nifty], which inspired the `secrets.yml` system used by this project; and for the [Capistrano Recipes episode of RailsCasts (#337)][cast337], the source code of which I have used almost verbatim.
 
-[rbenv-install]:https://github.com/sstephenson/rbenv#section_2
+[rbenv-install]:https://github.com/sstephenson/rbenv#installation
 [ruby-build-install]:https://github.com/sstephenson/ruby-build#readme
 [rbenv-bundler-install]:https://github.com/carsomyr/rbenv-bundler#readme
 [tarball]:https://github.com/mbrictson/rails-starter/tarball/master
