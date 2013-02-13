@@ -40,7 +40,7 @@ BASHRC
 end
 
 def bootstrap_ubuntu_for_ruby_compile
-  run "#{sudo} $HOME/.rbenv/plugins/rbenv-installer/bin/rbenv-bootstrap-ubuntu-12-04"
+  run "#{sudo} $HOME/.rbenv/plugins/rbenv-bootstrap/bin/rbenv-bootstrap-ubuntu-12-04"
 end
 
 def compile_ruby
