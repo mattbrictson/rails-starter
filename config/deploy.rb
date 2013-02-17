@@ -1,4 +1,6 @@
-# Taken from http://railscasts.com/episodes/337-capistrano-recipes ,
+# Taken from
+#   * http://railscasts.com/episodes/337-capistrano-recipes ,
+#   * http://railscasts.com/episodes/373-zero-downtime-deployment ,
 # with the following modifications and enhancements:
 #
 # * modified for Ubuntu 12.04
@@ -10,6 +12,7 @@
 # * https config for nginx
 
 require "bundler/capistrano"
+require 'capistrano/maintenance'
 
 set :stages, %w(production staging)
 set :default_stage, 'staging'

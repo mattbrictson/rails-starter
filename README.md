@@ -36,7 +36,7 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 
 ## Capistrano
 
-Several Capistrano recipes are provided out of the box, mostly taken from [RailsCasts #337][cast337]. These recipes assume you will deploy to Ubuntu 12.04 using nginx, unicorn, postgresql, and rbenv. To use them, first make the following edits:
+Several Capistrano recipes are provided out of the box, mostly taken from [RailsCasts #337][cast337] and [RailsCasts #373][cast373]. These recipes assume you will deploy to Ubuntu 12.04 using nginx, unicorn, postgresql, and rbenv. To use them, first make the following edits:
 
 1. Edit the `:repository` in `config/deploy.rb` to point to your own repository.
 2. Change the hostnames in `config/deploy/{production,staging}.rb` to match your servers.
@@ -61,7 +61,7 @@ Now to deploy to a brand new staging environment, these steps should work:
 ## Thanks to…
 
 * Jim Myhberg for [his helpful rbenv/bundler blog post][jim].
-* Ryan Bates for [nifty_config][nifty], which inspired the `secrets.yml` system used by this project; and for the [Capistrano Recipes episode of RailsCasts (#337)][cast337], the source code of which I have used almost verbatim.
+* Ryan Bates for [nifty_config][nifty], which inspired the `secrets.yml` system used by this project; and for the [Capistrano Recipes (#337)][cast337] and [Zero-Downtime Deployment (#373)][cast373] episodes of RailsCasts, the source code of which I have used almost verbatim.
 
 [rbenv-install]:https://github.com/sstephenson/rbenv#installation
 [ruby-build-install]:https://github.com/sstephenson/ruby-build#readme
@@ -71,4 +71,5 @@ Now to deploy to a brand new staging environment, these steps should work:
 [jim]:http://jimeh.me/blog/2011/11/01/my-ruby-development-environment/
 [nifty]:https://github.com/ryanb/nifty-generators/blob/master/rails_generators/nifty_config/USAGE
 [cast337]:http://railscasts.com/episodes/337-capistrano-recipes
+[cast373]:http://railscasts.com/episodes/373-zero-downtime-deployment
 [ssh-copy]:http://linux.die.net/man/1/ssh-copy-id

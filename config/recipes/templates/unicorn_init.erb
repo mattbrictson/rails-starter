@@ -50,7 +50,7 @@ force-stop)
   echo >&2 "Not running"
   ;;
 restart|reload)
-  sig HUP && echo reloaded OK && exit 0
+  sig USR2 && echo reloaded OK && exit 0
   echo >&2 "Couldn't reload, starting '$CMD' instead"
   run "$CMD"
   ;;

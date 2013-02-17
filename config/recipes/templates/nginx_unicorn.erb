@@ -8,6 +8,15 @@ upstream unicorn_<%= application %> {
     # server_name example.com;
     root <%= current_path %>/public;
 
+    if (-f $document_root/system/maintenance.html) {
+      return 503;
+    }
+    error_page 503 @maintenance;
+    location @maintenance {
+      rewrite  ^(.*)$  /system/maintenance.html last;
+      break;
+    }
+
     <% if port == 443 %>
       ssl on;
       ssl_certificate /etc/ssl/<%= application %>.crt;
