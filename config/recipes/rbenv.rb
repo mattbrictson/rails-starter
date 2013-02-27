@@ -19,6 +19,17 @@ namespace :rbenv do
     bootstrap_ubuntu_for_ruby_compile
     compile_ruby
   end
+
+  desc "Check that the specified version of Ruby is properly installed"
+  task :check, roles: :app do
+    versions = capture("rbenv versions")
+    unless versions =~ /\b#{Regexp.quote(ruby_version)}\b/
+      logger.log(Logger::IMPORTANT, "Required Ruby version is not installed: #{ruby_version}")
+      logger.log(Logger::IMPORTANT, "Run rbenv:upgrade to install it")
+      exit(1)
+    end
+  end
+  before "deploy:update_code", "rbenv:check"
 end
 
 def install_or_upgrade_rbenv
