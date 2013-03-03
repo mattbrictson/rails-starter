@@ -25,6 +25,7 @@ namespace :postgresql do
   task :setup, roles: :app do
     run "mkdir -p #{shared_path}/config"
     template "postgresql.yml.erb", "#{shared_path}/config/database.yml"
+    run "chmod 600 #{shared_path}/config/database.yml"
   end
   after "deploy:setup", "postgresql:setup"
 
