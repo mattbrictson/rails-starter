@@ -5,7 +5,7 @@ namespace :secrets do
 
     %w(rails_secret_token postmark_api_key).each do |k|
       value = Capistrano::CLI.password_prompt "#{rails_env.capitalize} #{k}: "
-      secrets[k] = value
+      secrets[k] = value.to_s
     end
 
     run "mkdir -p #{shared_path}/config"
