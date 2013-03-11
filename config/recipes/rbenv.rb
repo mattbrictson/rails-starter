@@ -22,8 +22,9 @@ namespace :rbenv do
 
   desc "Check that the specified version of Ruby is properly installed"
   task :check, roles: :app do
-    versions = capture("rbenv versions")
-    unless versions =~ /\b#{Regexp.quote(ruby_version)}\b/
+    begin
+      run("rbenv versions | grep '#{ruby_version}'")
+    rescue
       logger.log(Logger::IMPORTANT, "Required Ruby version is not installed: #{ruby_version}")
       logger.log(Logger::IMPORTANT, "Run rbenv:upgrade to install it")
       exit(1)
