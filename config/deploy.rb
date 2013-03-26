@@ -12,7 +12,9 @@
 # * https config for nginx
 
 require "bundler/capistrano"
+
 require 'capistrano/maintenance'
+set :maintenance_template_path, File.expand_path("../recipes/templates/maintenance.html.erb", __FILE__)
 
 set :stages, %w(production staging)
 set :default_stage, 'staging'
