@@ -56,7 +56,7 @@ def bootstrap_ubuntu_for_ruby_compile
 end
 
 def compile_ruby
-  run "rbenv install #{ruby_version}"
+  run "CFLAGS=-O3 rbenv install #{ruby_version}"
   run "rbenv global #{ruby_version}"
   run "gem install bundler --no-ri --no-rdoc"
   run "rbenv rehash"
