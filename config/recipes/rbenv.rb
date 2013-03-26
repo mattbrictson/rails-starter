@@ -2,7 +2,7 @@ set_default(:ruby_version) { File.read(File.expand_path("../../../.ruby-version"
 
 namespace :rbenv do
   desc "Install rbenv, Ruby, and the Bundler gem"
-  task :install, roles: :app do
+  task :install do
     run "#{sudo} aptitude -y update"
     run "#{sudo} aptitude -y install curl git-core"
 
@@ -14,14 +14,14 @@ namespace :rbenv do
   after "deploy:install", "rbenv:install"
 
   desc "Install the latest version of Ruby"
-  task :upgrade, roles: :app do
+  task :upgrade do
     install_or_upgrade_rbenv
     bootstrap_ubuntu_for_ruby_compile
     compile_ruby
   end
 
   desc "Check that the specified version of Ruby is properly installed"
-  task :check, roles: :app do
+  task :check do
     begin
       run("rbenv versions | grep '#{ruby_version}'")
     rescue
