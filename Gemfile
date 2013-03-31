@@ -6,6 +6,7 @@ gem 'ie_conditional_tag'
 gem 'jquery-rails', '~> 2.2.1'
 gem 'pg'
 gem 'rails',        '3.2.13'
+gem 'secure_headers'
 gem 'turbolinks'
 
 # Other gems to consider
