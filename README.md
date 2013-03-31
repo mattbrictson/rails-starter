@@ -13,7 +13,6 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 2. [Install `ruby-build`][ruby-build-install].
 3. Run `rbenv install 1.9.3-p392`; this will take several minutes.
 4. Optional: make 1.9.3-p392 your default ruby by running `rbenv global 1.9.3-p392`.
-5. [Install `rbenv-bundler`][rbenv-bundler-install].
 
 ## Rails
 
@@ -22,7 +21,7 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 1. `cd` into the project and run `git init && git add . && git commit -m "init"` to initialize a git repository.
 2. Install bundler: `gem install bundler`
 3. Run `rbenv rehash`.
-4. Run `bundle install --path .bundle/bundle`
+4. Run `bundle install --binstubs`
 5. Once more, run `rbenv rehash`.
 6. Consider installing [this handy bash script][r].
 7. Run `cp config/secrets.example.yml config/secrets.yml` to make a local version of the secret settings.
