@@ -5,7 +5,7 @@ gem 'draper'
 gem 'ie_conditional_tag'
 gem 'jquery-rails', '~> 2.2.1'
 gem 'pg'
-gem 'rails',        '3.2.12'
+gem 'rails',        '3.2.13'
 gem 'turbolinks'
 
 # Other gems to consider
