@@ -35,6 +35,7 @@ namespace :postgresql do
     run "mkdir -p #{pgpass_dir}"
     template "pgpass.erb", postgresql_pgpass_path
     run "chmod 0600 #{postgresql_pgpass_path}"
+    write_rbenv_var("PGPASSFILE", postgresql_pgpass_path)
   end
   after "postgresql:setup", "postgresql:setup_pgpass"
 
