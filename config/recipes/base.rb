@@ -10,7 +10,7 @@ end
 namespace :deploy do
   desc "Install everything onto the server"
   task :install do
-    run "#{sudo} aptitude -y update"
-    run "#{sudo} aptitude -y install python-software-properties"
+    run "#{sudo} aptitude -q -q -y update"
+    run "#{sudo} aptitude -y install python-software-properties debian-goodies"
   end
 end

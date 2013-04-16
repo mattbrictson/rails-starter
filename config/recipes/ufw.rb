@@ -1,7 +1,7 @@
 namespace :ufw do
   desc "Install the latest ufw package"
   task :install, roles: :web do
-    run "#{sudo} aptitude -y update"
+    run "#{sudo} aptitude -q -q -y update"
     run "#{sudo} aptitude -y install ufw"
   end
   after "deploy:install", "ufw:install"

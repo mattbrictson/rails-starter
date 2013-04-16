@@ -2,7 +2,7 @@ namespace :nginx do
   desc "Install latest stable release of nginx"
   task :install, roles: :web do
     run "#{sudo} add-apt-repository -y ppa:nginx/stable"
-    run "#{sudo} aptitude -y update"
+    run "#{sudo} aptitude -q -q -y update"
     run "#{sudo} aptitude -y install nginx"
   end
   after "deploy:install", "nginx:install"

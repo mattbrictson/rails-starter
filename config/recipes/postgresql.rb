@@ -9,7 +9,7 @@ namespace :postgresql do
   desc "Install the latest stable release of PostgreSQL."
   task :install, roles: :db, only: {primary: true} do
     run "#{sudo} add-apt-repository -y ppa:pitti/postgresql"
-    run "#{sudo} aptitude -y update"
+    run "#{sudo} aptitude -q -q -y update"
     run "#{sudo} aptitude -y install postgresql libpq-dev"
   end
   after "deploy:install", "postgresql:install"
