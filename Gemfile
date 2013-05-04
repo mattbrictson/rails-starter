@@ -9,7 +9,7 @@ gem 'secure_headers'
 gem 'turbolinks'
 
 # Other gems to consider
-# gem 'activeadmin', '0.5.1' # `rails g active_admin:assets` when upgrading
+# gem 'activeadmin', '0.6.0' # `rails g active_admin:assets` when upgrading
 # gem 'cancan'
 # gem 'devise'
 # gem 'draper'
