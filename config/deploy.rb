@@ -13,10 +13,6 @@
 
 require "bundler/capistrano"
 
-require 'capistrano/maintenance'
-set :maintenance_config_warning, false
-set :maintenance_template_path, File.expand_path("../recipes/templates/maintenance.html.erb", __FILE__)
-
 set :stages, %w(production staging)
 set :default_stage, 'staging'
 require 'capistrano/ext/multistage'
@@ -37,6 +33,8 @@ set :application, "rails-starter"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
+set :maintenance_config_warning, false
+set :maintenance_template_path, File.expand_path("../recipes/templates/maintenance.html.erb", __FILE__)
 
 set :scm, "git"
 set :repository, "git@github.com:mbrictson/#{application}.git"

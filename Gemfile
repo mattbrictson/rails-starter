@@ -48,7 +48,6 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'capistrano',              require: false
-  gem 'capistrano-maintenance',  require: false
   gem 'guard-livereload',        require: false
   gem 'guard-rspec',             require: false
   gem 'letter_opener'
