@@ -57,6 +57,7 @@ group :development do
   gem 'rb-fsevent',              require: false
   gem 'terminal-notifier-guard', require: false
   gem 'thin',                    require: false
+  gem 'xray-rails'
 
   # Other development gems to consider
   # gem 'brakeman',  require: false
