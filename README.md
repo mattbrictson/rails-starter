@@ -46,7 +46,8 @@ Several Capistrano recipes are provided out of the box, mostly taken from [Rails
 Now to deploy to a brand new staging environment, these steps should work:
 
 1. Provision an Ubuntu 12.04 VM at your hosting provider of choice.
-2. SSH into that VM as root and create the admin group: `groupadd admin`
+1. SSH into that VM as root and run `aptitude update && aptitude safe-upgrade`
+2. Create the admin group: `groupadd admin`
 3. Create a deployer user in that group: `adduser deployer --ingroup admin`
 4. Optional: use [`ssh-copy-id`][ssh-copy] to install your SSH key for the deployer user (`brew install ssh-copy-id` on the Mac).
 5. Generate or install the appropriate SSL certificate and key files for your site in `/etc/ssl`.
