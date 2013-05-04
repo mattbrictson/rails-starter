@@ -64,10 +64,6 @@ GEM
     daemons (1.1.9)
     debug_inspector (0.0.2)
     diff-lcs (1.2.4)
-    draper (1.2.0)
-      actionpack (>= 3.0)
-      activesupport (>= 3.0)
-      request_store (~> 1.0.3)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
@@ -181,7 +177,6 @@ GEM
       ffi (>= 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    request_store (1.0.5)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
@@ -252,7 +247,6 @@ DEPENDENCIES
   capistrano
   capybara
   coffee-rails (~> 3.2.1)
-  draper
   exception_notification
   factory_girl_rails
   guard-livereload

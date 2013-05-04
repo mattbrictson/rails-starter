@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'bcrypt-ruby',  '~> 3.0.0'
-gem 'draper'
 gem 'ie_conditional_tag'
 gem 'jquery-rails', '~> 2.2.1'
 gem 'pg'
@@ -13,6 +12,7 @@ gem 'turbolinks'
 # gem 'activeadmin', '0.5.1' # `rails g active_admin:assets` when upgrading
 # gem 'cancan'
 # gem 'devise'
+# gem 'draper'
 # gem 'dragonfly'
 # gem 'friendly_id'
 # gem 'informal'
