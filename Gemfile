@@ -35,10 +35,12 @@ group :assets do
   gem 'uglifier',        '>= 1.0.3'
 
   # Other asset pipeline gems to consider
-  # gem 'bootstrap-sass'
+  # gem 'anjlab-bootstrap-rails', require: 'bootstrap-rails'
   # gem 'compass-rails'
-  # gem 'jquery-ui-rails', '~> 4.0.1'
+  # gem 'font-awesome-rails'
+  # gem 'jquery-ui-rails'
   # gem 'neat'
+  # gem 'select2-rails'
 end
 
 # Gems that facilitate development but are not required to run the app.
