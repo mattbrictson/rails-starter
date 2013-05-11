@@ -27,6 +27,7 @@ load "config/recipes/rbenv"
 load "config/recipes/secrets"
 load "config/recipes/ufw"
 load "config/recipes/unicorn"
+load "config/recipes/logrotate"
 
 set :user, "deployer"
 set :application, "rails-starter"
