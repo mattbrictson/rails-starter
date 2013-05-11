@@ -9,8 +9,8 @@
 
 Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 
-1. Install `rbenv` into `~/.rbenv` by following [these instructions][rbenv-install].
-2. [Install `ruby-build`][ruby-build-install].
+1. Install `rbenv` into `~/.rbenv` using [the rbenv-installer script][rbenv-installer].
+2. Install [rbenv-binstubs][] so you won't need to use `bundle exec` all the time.
 3. Run `rbenv install 1.9.3-p392`; this will take several minutes.
 4. Optional: make 1.9.3-p392 your default ruby by running `rbenv global 1.9.3-p392`.
 
@@ -63,7 +63,8 @@ Now to deploy to a brand new staging environment, these steps should work:
 * Jim Myhberg for [his helpful rbenv/bundler blog post][jim].
 * Ryan Bates for [nifty_config][nifty], which inspired the `secrets.yml` system used by this project; and for the [Capistrano Recipes (#337)][cast337] and [Zero-Downtime Deployment (#373)][cast373] episodes of RailsCasts, the source code of which I have used almost verbatim.
 
-[rbenv-install]:https://github.com/sstephenson/rbenv#installation
+[rbenv-installer]:https://github.com/fesplugas/rbenv-installer
+[rbenv-binstubs]:https://github.com/ianheggie/rbenv-binstubs
 [ruby-build-install]:https://github.com/sstephenson/ruby-build#readme
 [rbenv-bundler-install]:https://github.com/carsomyr/rbenv-bundler#readme
 [tarball]:https://github.com/mbrictson/rails-starter/tarball/master
