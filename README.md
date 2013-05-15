@@ -39,7 +39,7 @@ Several Capistrano recipes are provided out of the box, mostly taken from [Rails
 
 1. Edit the `:repository` in `config/deploy.rb` to point to your own repository.
 2. Change the hostnames in `config/deploy/{production,staging}.rb` to match your servers.
-3. If you use a branch naming scheme in your git workflow (e.g. production-ready code is always in `master`), you may also want to change the default `:branch` settings in `config/deploy/{production,staging}.rb`.
+3. If you use a special branch naming scheme in your git workflow, you may also want to change the default `:branch` settings in `config/deploy/{production,staging}.rb`. The default is to deploy production from `master` and staging from `development`.
 4. The nginx recipe assumes your app will support https. Ensure you have your SSL certificate and private key installed on your server in `/etc/ssl`. See `config/recipes/templates/nginx_unicorn.erb` the file names that are expected.
 4. Review all files in `config/recipes` and `config/recipes/templates` to understand exactly what files and packages will be installed on your servers! Most likely there at least one or two practices that you will disagree with.
 
