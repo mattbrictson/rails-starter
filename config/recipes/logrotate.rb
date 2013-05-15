@@ -1,4 +1,4 @@
-set_default(:rails_log_glob) { "#{shared_path}/log/*" }
+set_default(:rails_log_glob) { "#{shared_path}/log/*.log" }
 
 namespace :logrotate do
   desc "Configure logrotate for Rails logs"
