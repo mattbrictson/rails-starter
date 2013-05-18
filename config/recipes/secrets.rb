@@ -3,7 +3,7 @@ namespace :secrets do
   task :setup, roles: :app do
     secrets = {}
 
-    %w(rails_secret_token postmark_api_key).each do |k|
+    %w(rails_secret_key_base postmark_api_key).each do |k|
       value = Capistrano::CLI.password_prompt "#{rails_env.capitalize} #{k}: "
       secrets[k] = value.to_s
     end
