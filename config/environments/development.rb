@@ -13,17 +13,22 @@ RailsStarter::Application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
-  # Ensure mailer works in development
+  # Ensure mailer works in development.
   config.action_mailer.delivery_method = :letter_opener
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { :host => 'rails-starter.dev' }
 
-  # Print deprecation notices to the Rails logger
+  # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
-  # Expands the lines which load the assets
+  # Raise an error on page load if there are pending migrations
+  config.active_record.migration_error = :page_load
+
+  # Debug mode disables concatenation and preprocessing of assets.
+  # This option may cause significant delays in view rendering with a large
+  # number of complex assets.
   config.assets.debug = true
 
-  # Automatically inject JavaScript needed for LiveReload
+  # Automatically inject JavaScript needed for LiveReload.
   config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
 end
