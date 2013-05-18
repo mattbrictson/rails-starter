@@ -1,8 +1,0 @@
-#!/usr/bin/env ruby
-# Run rake after loading Rails/Bundler; faster than `bundle exec rake`
-
-APP_PATH = File.expand_path('../../config/application',  __FILE__)
-require File.expand_path('../../config/boot',  __FILE__)
-require 'rake'
-
-Rake.application.run
