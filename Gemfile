@@ -53,7 +53,6 @@ group :development do
   gem 'guard-livereload',        require: false
   gem 'guard-rspec',             require: false
   gem 'letter_opener'
-  gem 'powder',                  require: false
   gem 'quiet_assets'
   gem 'rack-livereload'
   gem 'rb-fsevent',              require: false
