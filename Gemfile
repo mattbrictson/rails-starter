@@ -81,6 +81,6 @@ end
 #
 group :production, :staging do
   gem 'exception_notification'
-  gem 'simple_postmark'
+  gem 'postmark-rails'
   gem 'unicorn', require: false
 end
