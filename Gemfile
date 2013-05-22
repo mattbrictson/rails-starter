@@ -49,6 +49,7 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'brakeman',                require: false
   gem 'capistrano',              require: false
   gem 'guard-livereload',        require: false
   gem 'guard-rspec',             require: false
@@ -61,7 +62,6 @@ group :development do
   gem 'xray-rails'
 
   # Other development gems to consider
-  # gem 'brakeman',  require: false
   # gem 'debugger'
   # gem 'rails-erd'
   # gem 'vendorer'
