@@ -112,10 +112,10 @@ GEM
     ie_conditional_tag (0.5.0)
       rails (~> 3.0)
     journey (1.0.4)
-    jquery-rails (2.2.1)
+    jquery-rails (3.0.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    json (1.7.7)
+    json (1.8.0)
     kgio (2.8.0)
     launchy (2.3.0)
       addressable (~> 2.3)
@@ -132,7 +132,7 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.23)
-    multi_json (1.7.3)
+    multi_json (1.7.4)
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -270,7 +270,7 @@ DEPENDENCIES
   guard-livereload
   guard-rspec
   ie_conditional_tag
-  jquery-rails (~> 2.2.1)
+  jquery-rails (~> 3.0.0)
   launchy
   letter_opener
   normalize-rails (~> 2.0.1)
