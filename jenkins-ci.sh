@@ -13,6 +13,7 @@ cd $WORKSPACE
 
 # If ruby version is not installed, install it
 if ! ruby -v &> /dev/null; then
+  rbenv update
   rbenv install `cat .ruby-version`
   gem install bundler --no-ri --no-rdoc
   rbenv rehash
@@ -23,8 +24,8 @@ cp -n config/database.example.yml config/database.yml || true
 cp config/secrets.example.yml config/secrets.yml
 
 bundle install
-bundle exec rake db:migrate
-bundle exec rake spec
+bundle exec rake db:create db:migrate
+bundle exec rake
 
 if bundle show brakeman &> /dev/null; then
   bundle exec brakeman
