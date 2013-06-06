@@ -25,7 +25,14 @@ cp config/secrets.example.yml config/secrets.yml
 
 bundle install
 bundle exec rake db:create db:migrate
-bundle exec rake
+
+# Webkit needs an X server in order to render.
+# See https://github.com/thoughtbot/capybara-webkit/issues/402
+if type xvfb-run; then
+  DISPLAY=localhost:1.0 xvfb-run bundle exec rake
+else
+  bundle exec rake
+fi
 
 if bundle show brakeman &> /dev/null; then
   bundle exec brakeman
