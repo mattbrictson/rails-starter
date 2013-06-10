@@ -21,7 +21,7 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 1. `cd` into the project and run `git init && git add . && git commit -m "init"` to initialize a git repository.
 2. Install bundler: `gem install bundler`
 3. Run `rbenv rehash`.
-4. Run `bundle install --binstubs`
+4. Run `bundle install`
 5. Once more, run `rbenv rehash`.
 6. Consider installing [this handy bash script][r].
 7. Run `cp config/secrets.example.yml config/secrets.yml` to make a local version of the secret settings.
