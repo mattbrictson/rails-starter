@@ -10,9 +10,8 @@
 Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 
 1. Install `rbenv` into `~/.rbenv` using [the rbenv-installer script][rbenv-installer].
-2. Install [rbenv-binstubs][] so you won't need to use `bundle exec` all the time.
-3. Run `rbenv install 1.9.3-p392`; this will take several minutes.
-4. Optional: make 1.9.3-p392 your default ruby by running `rbenv global 1.9.3-p392`.
+2. Run `rbenv install 1.9.3-p392`; this will take several minutes.
+3. Optional: make 1.9.3-p392 your default ruby by running `rbenv global 1.9.3-p392`.
 
 ## Rails
 
@@ -21,7 +20,8 @@ Here's how I set up my Ruby environment with `rbenv` and `ruby-build`:
 1. `cd` into the project and run `git init && git add . && git commit -m "init"` to initialize a git repository.
 2. Install bundler: `gem install bundler`
 3. Run `rbenv rehash`.
-4. Run `bundle install --binstubs`
+3. If you haven't done so already, consider installing [rubygems-bundler][] so you won't need to use `bundle exec` all the time.
+4. Run `bundle install`
 5. Once more, run `rbenv rehash`.
 6. Consider installing [this handy bash script][r].
 7. Run `cp config/secrets.example.yml config/secrets.yml` to make a local version of the secret settings.
@@ -64,9 +64,7 @@ Now to deploy to a brand new staging environment, these steps should work:
 * Ryan Bates for [nifty_config][nifty], which inspired the `secrets.yml` system used by this project; and for the [Capistrano Recipes (#337)][cast337] and [Zero-Downtime Deployment (#373)][cast373] episodes of RailsCasts, the source code of which I have used almost verbatim.
 
 [rbenv-installer]:https://github.com/fesplugas/rbenv-installer
-[rbenv-binstubs]:https://github.com/ianheggie/rbenv-binstubs
-[ruby-build-install]:https://github.com/sstephenson/ruby-build#readme
-[rbenv-bundler-install]:https://github.com/carsomyr/rbenv-bundler#readme
+[rubygems-bundler]:https://github.com/mpapis/rubygems-bundler
 [tarball]:https://github.com/mbrictson/rails-starter/tarball/master
 [r]:http://blog.55minutes.com/post/15353228566/invoke-rails-and-rake-faster-and-with-fewer-mistakes
 [jim]:http://jimeh.me/blog/2011/11/01/my-ruby-development-environment/
