@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'bcrypt-ruby',       '~> 3.0.0'
 gem 'bourbon'
 gem 'coffee-rails',      '~> 4.0.0'
-gem 'jquery-rails',      '~> 2.2.1'
+gem 'jquery-rails',      '~> 3.0.0'
 gem 'normalize-rails',   '~> 2.0.1'
 gem 'pg'
 gem 'rails',             '4.0.0.rc1'
@@ -39,11 +39,11 @@ gem 'uglifier',          '>= 1.3.0'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'brakeman',                require: false
   gem 'capistrano',              require: false
   gem 'guard-livereload',        require: false
   gem 'guard-rspec',             require: false
   gem 'letter_opener'
-  gem 'powder',                  require: false
   gem 'quiet_assets'
   gem 'rack-livereload'
   gem 'rb-fsevent',              require: false
@@ -52,7 +52,6 @@ group :development do
   gem 'xray-rails'
 
   # Other development gems to consider
-  # gem 'brakeman',  require: false
   # gem 'debugger'
   # gem 'rails-erd'
   # gem 'vendorer'
@@ -74,6 +73,6 @@ end
 #
 group :production, :staging do
   gem 'exception_notification'
-  gem 'simple_postmark'
+  gem 'postmark-rails'
   gem 'unicorn', require: false
 end
