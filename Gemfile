@@ -18,7 +18,6 @@ gem 'turbolinks'
 # gem 'informal'
 # gem 'jbuilder'
 # gem 'kaminari'
-# gem 'rack-mini-profiler'
 # gem 'redcarpet'
 # gem 'simple_form'
 
@@ -36,7 +35,6 @@ group :assets do
 
   # Other asset pipeline gems to consider
   # gem 'anjlab-bootstrap-rails', require: 'bootstrap-rails'
-  # gem 'compass-rails'
   # gem 'font-awesome-rails'
   # gem 'jquery-ui-rails'
   # gem 'neat'
@@ -64,7 +62,6 @@ group :development do
   # Other development gems to consider
   # gem 'debugger'
   # gem 'rails-erd'
-  # gem 'vendorer'
 end
 
 # Gems needed for running tests.
@@ -75,6 +72,12 @@ group :test do
   gem 'factory_girl_rails', group: :development
   gem 'launchy'
   gem 'rspec-rails',        group: :development
+
+  # Other test gems to consider
+  # gem 'capybara-email'
+  # gem 'capybara-webkit'
+  # gem 'database_cleaner'
+  # gem 'shoulda-matchers'
 end
 
 # Gems needed in production environments only.
