@@ -9,6 +9,7 @@ This template targets the following server stack:
 * Unicorn
 * Nginx
 * rbenv
+* [Postmark][] for mail delivery
 
 By using this template, you’ll hit the ground running with best practices for productive Rails and front-end development:
 
@@ -71,7 +72,7 @@ We recommend [rbenv][] and [ruby-build][] for managing Ruby installations. This 
 
 ## Using the provided Capistrano recipes
 
-Several Capistrano recipes are provided out of the box, mostly taken from [RailsCasts #337][cast337] and [RailsCasts #373][cast373]. These recipes assume you will deploy to Ubuntu 12.04 using Nginx, Unicorn, PostgreSQL, and rbenv.
+Several Capistrano recipes are provided out of the box, mostly taken from [RailsCasts #337][cast337] and [RailsCasts #373][cast373]. These recipes assume you will deploy to Ubuntu 12.04 using Nginx, Unicorn, PostgreSQL, rbenv, and Postmark.
 
 ### Configure the recipes for your project
 
@@ -106,6 +107,7 @@ Now to deploy to a brand new staging environment, these steps should work:
 * Jim Myhberg for [his helpful rbenv/bundler blog post][jim].
 * Ryan Bates for [nifty_config][nifty], which inspired the `secrets.yml` system used by this project; and for the [Capistrano Recipes (#337)][cast337] and [Zero-Downtime Deployment (#373)][cast373] episodes of RailsCasts, the source code of which I have used almost verbatim.
 
+[Postmark]:https://postmarkapp.com
 [sass-reloading]:http://blog.55minutes.com/2013/01/lightning-fast-sass-reloading-in-rails-32/
 [SMACSS]:http://smacss.com
 [smacss-rails]:http://blog.55minutes.com/2013/01/smacss-and-rails/
