@@ -13,11 +13,16 @@ This template targets the following server stack:
 By using this template, you’ll hit the ground running with best practices for productive Rails and front-end development:
 
 * RSpec and Capybara for testing
-* guard-livereload for fast, iterative front-end development (more on our blog: [Lightning-Fast Sass Reloading in Rails 3.2][sass-reloading])
+* guard-livereload for fast, iterative front-end development
 * Up-to-date rbenv and bundler gem management techniques
-* [SMACSS][] for organizing stylesheets (more on our blog: [SMACSS and Rails – A Styleguide for the Asset Pipeline](smacss-rails))
+* [SMACSS][] for organizing stylesheets
 * Capistrano recipes to make deployment easy
 * `secrets.yml` for storing encryption keys and secret tokens safely outside of source control
+
+More on our blog:
+
+* [Lightning-Fast Sass Reloading in Rails 3.2][sass-reloading]
+* [SMACSS and Rails – A Styleguide for the Asset Pipeline](smacss-rails)
 
 
 ## Getting started
