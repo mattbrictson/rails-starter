@@ -30,11 +30,11 @@ More on our blog:
 
 ### Install rbenv
 
-We recommend [rbenv][] and [ruby-build][] for managing Ruby installations. This template currently uses Ruby 1.9.3-p392.
+We recommend [rbenv][] and [ruby-build][] for managing Ruby installations. This template currently uses Ruby 2.0.0-p195.
 
 1. Install rbenv into `~/.rbenv` using the fantastic [rbenv-installer][] script.
-2. Run `rbenv install 1.9.3-p392` (this will take several minutes).
-3. Optional: make 1.9.3-p392 your default ruby by running `rbenv global 1.9.3-p392`.
+2. Run `rbenv install 2.0.0-p195` (this will take several minutes).
+3. Optional: make 2.0.0-p195 your default ruby by running `rbenv global 2.0.0-p195`.
 
 ### Create a Rails project from the template
 
@@ -49,7 +49,7 @@ We recommend [rbenv][] and [ruby-build][] for managing Ruby installations. This 
 4. Run `bundle install`
 5. Once more, run `rbenv rehash`.
 
-**Protip:** Install [rubygems-bundler][] so you won’t need to use `bundle exec` all the time.
+**Protip:** Install [rubygems-bundler][] so you won’t need to use `bundle exec` all the time. *Don’t forgot to reinstall it whenever you install a new version of Ruby.*
 
 ### Set up your local configuration
 
