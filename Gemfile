@@ -36,7 +36,7 @@ group :assets do
   gem 'uglifier',        '>= 1.0.3'
 
   # Other asset pipeline gems to consider
-  # gem 'anjlab-bootstrap-rails', require: 'bootstrap-rails'
+  # gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
   # gem 'font-awesome-rails'
   # gem 'jquery-ui-rails'
   # gem 'neat'
@@ -44,21 +44,21 @@ group :assets do
 end
 
 # Gems that facilitate development but are not required to run the app.
-# Note `require: false` for those gems that are purely command-line tools.
+# Note `:require => false` for those gems that are purely command-line tools.
 #
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'brakeman',                require: false
-  gem 'capistrano',              require: false
-  gem 'guard-livereload',        require: false
-  gem 'guard-rspec',             require: false
+  gem 'brakeman',                :require => false
+  gem 'capistrano',              :require => false
+  gem 'guard-livereload',        :require => false
+  gem 'guard-rspec',             :require => false
   gem 'letter_opener'
   gem 'quiet_assets'
   gem 'rack-livereload'
-  gem 'rb-fsevent',              require: false
-  gem 'terminal-notifier-guard', require: false
-  gem 'thin',                    require: false
+  gem 'rb-fsevent',              :require => false
+  gem 'terminal-notifier-guard', :require => false
+  gem 'thin',                    :require => false
   gem 'xray-rails'
 
   # Other development gems to consider
@@ -72,9 +72,9 @@ end
 #
 group :test do
   gem 'capybara'
-  gem 'factory_girl_rails', group: :development
+  gem 'factory_girl_rails', :group => :development
   gem 'launchy'
-  gem 'rspec-rails',        group: :development
+  gem 'rspec-rails',        :group => :development
 
   # Other test gems to consider
   # gem 'capybara-email'
@@ -88,5 +88,5 @@ end
 group :production, :staging do
   gem 'exception_notification'
   gem 'postmark-rails'
-  gem 'unicorn', require: false
+  gem 'unicorn', :require => false
 end
