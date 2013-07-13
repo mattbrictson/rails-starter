@@ -14,12 +14,14 @@ gem 'turbolinks'
 # gem 'devise'
 # gem 'draper'
 # gem 'dragonfly'
+# gem 'facets', :require => false
 # gem 'friendly_id'
-# gem 'informal'
 # gem 'jbuilder'
 # gem 'kaminari'
+# gem 'mail_view'
 # gem 'redcarpet'
 # gem 'simple_form'
+# gem 'state_machine'
 
 
 # Gems used only for assets and not required
@@ -61,6 +63,7 @@ group :development do
 
   # Other development gems to consider
   # gem 'debugger'
+  # gem 'guard-shell', :require => false
   # gem 'rails-erd'
 end
 
