@@ -36,6 +36,12 @@ We recommend [rbenv][] and [ruby-build][] for managing Ruby installations. This 
 2. Run `rbenv install 2.0.0-p195` (this will take several minutes).
 3. Optional: make 2.0.0-p195 your default ruby by running `rbenv global 2.0.0-p195`.
 
+### Install Qt
+
+This starter uses the [capybara-webkit][] gem, which requires the Qt libraries (version 4.8 or higher). These libraries aren't installed out of the box on most systems, including Mac OS X.
+
+To install the Qt libraries, [follow these instructions][qt-instructions]. Homebrew is the easiest option on the Mac.
+
 ### Create a Rails project from the template
 
 1. Download and extract the [tarball of the 55minutes/rails-starter repository][tarball]; this will be the start of your new Rails project.
@@ -114,6 +120,8 @@ Now to deploy to a brand new staging environment, these steps should work:
 [rbenv]:https://github.com/sstephenson/rbenv
 [ruby-build]:https://github.com/sstephenson/ruby-build
 [rbenv-installer]:https://github.com/fesplugas/rbenv-installer
+[capybara-webkit]:https://github.com/thoughtbot/capybara-webkit
+[qt-instructions]:https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
 [rubygems-bundler]:https://github.com/mpapis/rubygems-bundler
 [tarball]:https://github.com/55minutes/rails-starter/tarball/master
 [r]:http://blog.55minutes.com/post/15353228566/invoke-rails-and-rake-faster-and-with-fewer-mistakes
