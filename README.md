@@ -23,7 +23,7 @@ By using this template, you’ll hit the ground running with best practices for 
 More on our blog:
 
 * [Lightning-Fast Sass Reloading in Rails 3.2][sass-reloading]
-* [SMACSS and Rails – A Styleguide for the Asset Pipeline](smacss-rails)
+* [SMACSS and Rails – A Styleguide for the Asset Pipeline][smacss-rails]
 
 
 ## Getting started
