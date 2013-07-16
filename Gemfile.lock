@@ -116,8 +116,6 @@ GEM
     hike (1.2.3)
     http_parser.rb (0.5.3)
     i18n (0.6.1)
-    ie_conditional_tag (0.5.0)
-      rails (~> 3.0)
     journey (1.0.4)
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
@@ -283,7 +281,6 @@ DEPENDENCIES
   factory_girl_rails
   guard-livereload
   guard-rspec
-  ie_conditional_tag
   jquery-rails (~> 3.0.0)
   launchy
   letter_opener
