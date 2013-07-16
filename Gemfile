@@ -72,15 +72,16 @@ end
 #
 group :test do
   gem 'capybara'
+  gem 'capybara-webkit'
+  gem 'database_cleaner'
   gem 'factory_girl_rails', :group => :development
   gem 'launchy'
   gem 'rspec-rails',        :group => :development
 
   # Other test gems to consider
   # gem 'capybara-email'
-  # gem 'capybara-webkit'
-  # gem 'database_cleaner'
   # gem 'shoulda-matchers'
+  # gem 'timecop'
 end
 
 # Gems needed in production environments only.

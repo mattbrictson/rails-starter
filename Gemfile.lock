@@ -64,6 +64,9 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    capybara-webkit (1.0.0)
+      capybara (~> 2.0, >= 2.0.2)
+      json
     coderay (1.0.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -73,6 +76,7 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     daemons (1.1.9)
+    database_cleaner (1.0.1)
     debug_inspector (0.0.2)
     diff-lcs (1.2.4)
     em-websocket (0.5.0)
@@ -271,7 +275,9 @@ DEPENDENCIES
   brakeman
   capistrano
   capybara
+  capybara-webkit
   coffee-rails (~> 3.2.1)
+  database_cleaner
   exception_notification
   factory_girl_rails
   guard-livereload
