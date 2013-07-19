@@ -88,11 +88,13 @@ RailsStarter::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Send error email whenever uncaught exception occurs in production
-  config.middleware.use ExceptionNotifier,
-    :email_prefix => "[#{Rails.env.to_s.upcase}] ",
-    :sender_address => %Q{"RailsStarter errors" <support@rails-starter.com>},
-    :exception_recipients => %w(support@rails-starter.com),
-    :sections => %w{version} + ExceptionNotifier::Notifier.default_sections,
-    :background_sections => %w{version} + ExceptionNotifier::Notifier.default_background_sections,
-    :email_format => :html
+  config.middleware.use ExceptionNotification::Rack,
+    :email => {
+      :email_prefix => "[#{Rails.env.to_s.upcase}] ",
+      :sender_address => %Q{"RailsStarter errors" <support@rails-starter.com>},
+      :exception_recipients => %w(support@rails-starter.com),
+      :sections => %w{version} + ExceptionNotifier::Notifier.default_sections,
+      :background_sections => %w{version} + ExceptionNotifier::Notifier.default_background_sections,
+      :email_format => :html
+    }
 end
