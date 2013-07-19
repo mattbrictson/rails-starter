@@ -91,7 +91,7 @@ The easiest way to add Twitter Bootstrap is through [SimpleForm][]. Follow these
 
         //= require twitter/bootstrap
 
-4. Edit `app/assets/stylesheets/application.css.scss` and add this lines:
+4. Edit `app/assets/stylesheets/application.css.scss` and add these lines:
 
         //= require twitter/bootstrap
         //= require twitter/bootstrap-responsive
