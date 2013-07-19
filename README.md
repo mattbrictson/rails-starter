@@ -104,7 +104,7 @@ Twitter Bootstrap’s JavaScripts and CSS will now be available throughout your 
 <% end %>
 ```
 
-[Here are a bunch of great SimpleForm+Bootstrap examples.][bootstrap-examples]
+**Protip:** [Here are a bunch of great SimpleForm+Bootstrap examples.][bootstrap-examples]
 
 
 ## Using the provided Capistrano recipes
