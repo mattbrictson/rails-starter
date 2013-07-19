@@ -106,6 +106,8 @@ Twitter Bootstrap’s JavaScripts and CSS will now be available throughout your 
 
 **Protip:** [Here are a bunch of great SimpleForm+Bootstrap examples.][bootstrap-examples]
 
+**Protip:** If you plan on using [Devise][], make sure you install SimpleForm first! Then when you install Devise, it will automatically detect SimpleForm and generate its views with `simple_form_for`.
+
 
 ## Using the provided Capistrano recipes
 
@@ -158,6 +160,7 @@ Now to deploy to a brand new staging environment, these steps should work:
 [r]:http://blog.55minutes.com/post/15353228566/invoke-rails-and-rake-faster-and-with-fewer-mistakes
 [SimpleForm]:https://github.com/plataformatec/simple_form
 [bootstrap-examples]:http://simple-form-bootstrap.plataformatec.com.br/articles/new
+[Devise]:http://devise.plataformatec.com.br
 [jim]:http://jimeh.me/blog/2011/11/01/my-ruby-development-environment/
 [nifty]:https://github.com/ryanb/nifty-generators/blob/master/rails_generators/nifty_config/USAGE
 [cast337]:http://railscasts.com/episodes/337-capistrano-recipes
