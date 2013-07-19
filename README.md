@@ -19,6 +19,7 @@ By using this template, you’ll hit the ground running with best practices for 
 * [SMACSS][] for organizing stylesheets
 * Capistrano recipes to make deployment easy
 * `secrets.yml` for storing encryption keys and secret tokens safely outside of source control
+* An easy way to add Twitter Bootstrap, should you choose to do so
 
 More on our blog:
 
@@ -76,6 +77,36 @@ To install the Qt libraries, [follow these instructions][qt-instructions]. Homeb
 **Protip:** Install [this handy bash script][r] to consolidate `rails` and `rake` into a single `r` shortcut.
 
 
+## Twitter Bootstrap integration
+
+The easiest way to add Twitter Bootstrap is through [SimpleForm][]. Follow these steps:
+
+1. Uncomment these lines in the Gemfile and run `bundle install`:
+
+        gem 'simple_form'
+        gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
+
+2. Run `rails generate simple_form:install --bootstrap`
+3. Edit `app/assets/javascripts/application.js` and add this line after `jquery_ujs`:
+
+        //= require twitter/bootstrap
+
+4. Edit `app/assets/stylesheets/application.css.scss` and add this lines:
+
+        //= require twitter/bootstrap
+        //= require twitter/bootstrap-responsive
+
+Twitter Bootstrap’s JavaScripts and CSS will now be available throughout your app. To create forms that use Bootstrap’s styling, use SimpleForm like this:
+
+```
+<%= simple_form_for(@article, :html => { :class => 'form-horizontal' }) do |f| %>
+  ...
+<% end %>
+```
+
+[Here are a bunch of great SimpleForm+Bootstrap examples.][bootstrap-examples]
+
+
 ## Using the provided Capistrano recipes
 
 Several Capistrano recipes are provided out of the box, mostly taken from [RailsCasts #337][cast337] and [RailsCasts #373][cast373]. These recipes assume you will deploy to Ubuntu 12.04 using Nginx, Unicorn, PostgreSQL, rbenv, and Postmark.
@@ -125,6 +156,8 @@ Now to deploy to a brand new staging environment, these steps should work:
 [rubygems-bundler]:https://github.com/mpapis/rubygems-bundler
 [tarball]:https://github.com/55minutes/rails-starter/tarball/master
 [r]:http://blog.55minutes.com/post/15353228566/invoke-rails-and-rake-faster-and-with-fewer-mistakes
+[SimpleForm]:https://github.com/plataformatec/simple_form
+[bootstrap-examples]:http://simple-form-bootstrap.plataformatec.com.br/articles/new
 [jim]:http://jimeh.me/blog/2011/11/01/my-ruby-development-environment/
 [nifty]:https://github.com/ryanb/nifty-generators/blob/master/rails_generators/nifty_config/USAGE
 [cast337]:http://railscasts.com/episodes/337-capistrano-recipes
