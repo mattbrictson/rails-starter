@@ -55,7 +55,7 @@ To install the Qt libraries, [follow these instructions][qt-instructions]. Homeb
 4. Run `bundle install`
 5. Once more, run `rbenv rehash`.
 
-**Protip:** Install [rubygems-bundler][] so you won’t need to use `bundle exec` all the time. *Don’t forgot to reinstall it whenever you install a new version of Ruby.*
+**Protip:** Install [rubygems-bundler][] so you won’t need to use `bundle exec` all the time. *Don’t forget to reinstall it whenever you install a new version of Ruby.*
 
 ### Set up your local configuration
 
