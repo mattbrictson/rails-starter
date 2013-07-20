@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+# Note that the release versions of these gems may not yet be compatible
+# with Rails 4. Get up-to-date compatibility information by uploading this
+# Gemfile to http://ready4rails4.net
+
 gem 'bcrypt-ruby',       '~> 3.0.0'
 gem 'bourbon'
 gem 'coffee-rails',      '~> 4.0.0'
