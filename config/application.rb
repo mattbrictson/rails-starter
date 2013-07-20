@@ -24,22 +24,5 @@ module RailsStarter
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-
-    config.generators do |g|
-      # Generate desired tests using RSpec.
-      g.test_framework :rspec, :view_specs => false,
-                               :controller_specs => false,
-                               :request_specs => false,
-                               :routing_specs => false
-
-      # Use factory_girl for factories.
-      g.fixture_replacement :factory_girl, :dir => 'spec/factories'
-
-      # Disable generators we don't need.
-      g.stylesheets false
-      g.javascripts false
-      g.helper      false
-    end
-
   end
 end
