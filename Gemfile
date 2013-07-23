@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'bcrypt-ruby',  '~> 3.0.0'
 gem 'jquery-rails', '~> 3.0.0'
 gem 'pg'
-gem 'rails',        '3.2.13'
+gem 'rails',        '3.2.14'
 gem 'secure_headers'
 gem 'turbolinks'
 
