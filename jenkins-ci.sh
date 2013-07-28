@@ -37,3 +37,7 @@ fi
 if bundle show brakeman &> /dev/null; then
   bundle exec brakeman
 fi
+
+if bundle show license_finder &> /dev/null; then
+  bundle exec license_finder
+fi
