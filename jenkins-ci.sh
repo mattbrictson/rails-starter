@@ -24,7 +24,8 @@ cp -n config/database.example.yml config/database.yml || true
 cp config/secrets.example.yml config/secrets.yml
 
 bundle install
-bundle exec rake db:create db:migrate db:seed
+bundle exec rake db:create db:migrate
+bundle exec rake db:seed
 
 # Webkit needs an X server in order to render.
 # See https://github.com/thoughtbot/capybara-webkit/issues/402
