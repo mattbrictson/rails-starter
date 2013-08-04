@@ -61,6 +61,7 @@ group :development do
   # Other development gems to consider
   # gem 'debugger'
   # gem 'guard-shell', :require => false
+  # gem 'license_finder', :require => false
   # gem 'rails-erd'
 end
 

@@ -28,6 +28,7 @@ load "config/recipes/secrets"
 load "config/recipes/ufw"
 load "config/recipes/unicorn"
 load "config/recipes/logrotate"
+load "config/recipes/seeds"
 
 set :user, "deployer"
 set :application, "rails-starter"

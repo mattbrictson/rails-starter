@@ -25,6 +25,7 @@ cp config/secrets.example.yml config/secrets.yml
 
 bundle install
 bundle exec rake db:create db:migrate
+bundle exec rake db:seed
 
 # Webkit needs an X server in order to render.
 # See https://github.com/thoughtbot/capybara-webkit/issues/402
@@ -36,4 +37,8 @@ fi
 
 if bundle show brakeman &> /dev/null; then
   bundle exec brakeman
+fi
+
+if bundle show license_finder &> /dev/null; then
+  bundle exec license_finder
 fi
