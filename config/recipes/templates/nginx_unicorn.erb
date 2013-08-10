@@ -34,6 +34,8 @@ upstream unicorn_<%= application %> {
 
     <% if port == 443 %>
       ssl on;
+      ssl_ciphers RC4:HIGH:!aNULL:!MD5;
+      ssl_prefer_server_ciphers on;
       ssl_certificate /etc/ssl/<%= application %>.crt;
       ssl_certificate_key /etc/ssl/<%= application %>.key;
     <% end %>
