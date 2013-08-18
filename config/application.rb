@@ -43,7 +43,7 @@ module RailsStarter
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
-    config.filter_parameters += [:password, :password_confirmation]
+    config.filter_parameters += %w(password secret session cookie csrf)
 
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
