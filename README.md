@@ -111,40 +111,14 @@ Twitter Bootstrap’s JavaScripts and CSS will now be available throughout your 
 
 ## Using the provided Capistrano recipes
 
-Several Capistrano recipes are provided out of the box, mostly taken from [RailsCasts #337][cast337] and [RailsCasts #373][cast373]. These recipes assume you will deploy to Ubuntu 12.04 using Nginx, Unicorn, PostgreSQL, rbenv, and Postmark.
+This project uses the `capistrano-fiftyfive` gem, which provides all recipes needed to set up and deploy on Ubuntu 12.04. It's as easy as:
 
-### Configure the recipes for your project
+    cap deploy:install
+    cap deploy:setup
+    cap deploy:cold
 
-To use the recipes, first make the following edits:
+**Refer to the [capistrano-fiftyfive README][cap-55] more details and deployment instructions.**
 
-1. Edit the `:repository` in `config/deploy.rb` to point to your own repository.
-2. Change the hostnames in `config/deploy/{production,staging}.rb` to match your servers.
-3. If you use a special branch naming scheme in your git workflow, you may also want to change the default `:branch` settings in `config/deploy/{production,staging}.rb`. The default is to deploy production from `master` and staging from `development`.
-4. This template assumes your app will enforce HTTPS at all times. Ensure you have your SSL certificate and private key installed on your server in `/etc/ssl`. See `config/recipes/templates/nginx_unicorn.erb` for the file names that are expected.
-5. Review all files in `config/recipes` and `config/recipes/templates` to understand exactly what files and packages will be installed on your servers! Most likely there at least one or two practices that you will disagree with.
-
-
-### Provision and deploy to a new server
-
-Now to deploy to a brand new staging environment, these steps should work:
-
-1. Provision an Ubuntu 12.04 VPS at your hosting provider of choice.
-2. SSH into that VPS as root and run `aptitude update && aptitude safe-upgrade`
-3. Create the admin group: `groupadd admin`
-4. Create a deployer user in that group: `adduser deployer --ingroup admin`
-6. Generate or install the appropriate SSL certificate and key files for your site in `/etc/ssl`.
-7. Now, from your Rails project on your local machine, fire off these commands. These will install various packages, compile Ruby, set up the database, and deploy your app on the staging server (double check the host in `config/deploy/staging.rb` is correct).
-
-        cap deploy:install
-        cap deploy:setup
-        cap deploy:cold
-
-**Protip:** Use [`ssh-copy-id`][ssh-copy] to install your SSH key for the deployer user (`brew install ssh-copy-id` on the Mac).
-
-## Thanks to…
-
-* Jim Myhberg for [his helpful rbenv/bundler blog post][jim].
-* Ryan Bates for [nifty_config][nifty], which inspired the `secrets.yml` system used by this project; and for the [Capistrano Recipes (#337)][cast337] and [Zero-Downtime Deployment (#373)][cast373] episodes of RailsCasts, the source code of which I have used almost verbatim.
 
 [Postmark]:https://postmarkapp.com
 [sass-reloading]:http://blog.55minutes.com/2013/01/lightning-fast-sass-reloading-in-rails-32/
@@ -161,8 +135,4 @@ Now to deploy to a brand new staging environment, these steps should work:
 [SimpleForm]:https://github.com/plataformatec/simple_form
 [bootstrap-examples]:http://simple-form-bootstrap.plataformatec.com.br/articles/new
 [Devise]:http://devise.plataformatec.com.br
-[jim]:http://jimeh.me/blog/2011/11/01/my-ruby-development-environment/
-[nifty]:https://github.com/ryanb/nifty-generators/blob/master/rails_generators/nifty_config/USAGE
-[cast337]:http://railscasts.com/episodes/337-capistrano-recipes
-[cast373]:http://railscasts.com/episodes/373-zero-downtime-deployment
-[ssh-copy]:http://linux.die.net/man/1/ssh-copy-id
+[cap-55]:https://github.com/55minutes/capistrano-fiftyfive/#usage

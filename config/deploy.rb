@@ -1,34 +1,15 @@
-# Taken from
-#   * http://railscasts.com/episodes/337-capistrano-recipes ,
-#   * http://railscasts.com/episodes/373-zero-downtime-deployment ,
-# with the following modifications and enhancements:
-#
-# * modified for Ubuntu 12.04
-# * multistage support (staging and production environments)
-# * postgresql backup using logrotated
-# * ufw setup
-# * rbenv:upgrade task (for when you someday change your ruby version)
-# * secrets.yml for storing the Rails token and Postmark API key
-# * https config for nginx
-
 require "bundler/capistrano"
 
 set :stages, %w(production staging)
 set :default_stage, 'staging'
 require 'capistrano/ext/multistage'
 
-load "config/recipes/base"
-
-load "config/recipes/nginx"
-load "config/recipes/nodejs"
-load "config/recipes/postgresql"
-load "config/recipes/rake"
-load "config/recipes/rbenv"
-load "config/recipes/secrets"
-load "config/recipes/ufw"
-load "config/recipes/unicorn"
-load "config/recipes/logrotate"
-load "config/recipes/seeds"
+# capistrano-fiftyfive recipes and config
+# See: https://github.com/55minutes/capistrano-fiftyfive/
+require "capistrano/fiftyfive"
+Capistrano::Fiftyfive.load(:except => [:cron, :delayed_job], :autorun => true)
+set :project_root, File.expand_path("../..", __FILE__)
+set :secret_keys, %w(rails_secret_key_base postmark_api_key)
 
 set :user, "deployer"
 set :application, "rails-starter"

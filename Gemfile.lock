@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/55minutes/capistrano-fiftyfive.git
+  revision: 476faa82ad5c9ef1fecf43a5b6e70c2982c512a6
+  branch: master
+  specs:
+    capistrano-fiftyfive (0.0.1)
+      capistrano (>= 2.15.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -266,6 +274,7 @@ DEPENDENCIES
   bourbon
   brakeman
   capistrano
+  capistrano-fiftyfive!
   capybara
   capybara-webkit
   coffee-rails (~> 4.0.0)

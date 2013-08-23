@@ -48,6 +48,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'brakeman',                :require => false
   gem 'capistrano',              :require => false
+  gem 'capistrano-fiftyfive',    :require => false, :github => '55minutes/capistrano-fiftyfive', :branch => :master
   gem 'guard-livereload',        :require => false
   gem 'guard-rspec',             :require => false
   gem 'letter_opener'

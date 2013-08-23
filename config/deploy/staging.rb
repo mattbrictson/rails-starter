@@ -1,3 +1,5 @@
 set :rails_env, 'staging'
-set_default :branch, 'development'
-server 'staging.yoursitegoeshere.com', :web, :app, :db, primary: true
+_cset :branch, 'development'
+
+server 'staging.yoursitegoeshere.com',
+       :web, :app, :db, :backup, :primary => true

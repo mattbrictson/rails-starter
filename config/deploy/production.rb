@@ -1,3 +1,5 @@
 set :rails_env, 'production'
-set_default :branch, 'master'
-server 'yoursitegoeshere.com', :web, :app, :db, primary: true
+_cset :branch, 'master'
+
+server 'yoursitegoeshere.com',
+       :web, :app, :db, :backup, :primary => true
