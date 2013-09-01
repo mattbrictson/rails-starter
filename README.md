@@ -1,6 +1,6 @@
 # 55minutes/rails-starter
 
-**A simple template for starting new Rails projects.**
+**A simple template for starting new Rails 4 projects.**
 
 This template targets the following server stack:
 
