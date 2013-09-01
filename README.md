@@ -1,6 +1,6 @@
 # 55minutes/rails-starter
 
-**A simple template for starting new Rails projects.**
+**A simple template for starting new Rails 3.2 projects.**
 
 This template targets the following server stack:
 
@@ -130,7 +130,7 @@ This project uses the `capistrano-fiftyfive` gem, which provides all recipes nee
 [capybara-webkit]:https://github.com/thoughtbot/capybara-webkit
 [qt-instructions]:https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
 [rubygems-bundler]:https://github.com/mpapis/rubygems-bundler
-[tarball]:https://github.com/55minutes/rails-starter/tarball/master
+[tarball]:https://github.com/55minutes/rails-starter/tarball/rails-3-2
 [r]:http://blog.55minutes.com/post/15353228566/invoke-rails-and-rake-faster-and-with-fewer-mistakes
 [SimpleForm]:https://github.com/plataformatec/simple_form
 [bootstrap-examples]:http://simple-form-bootstrap.plataformatec.com.br/articles/new
