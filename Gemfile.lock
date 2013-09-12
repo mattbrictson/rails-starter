@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/55minutes/capistrano-fiftyfive.git
-  revision: 476faa82ad5c9ef1fecf43a5b6e70c2982c512a6
+  revision: 64b114bf9c8dade668b6204ff6f18620aa14bad6
   branch: master
   specs:
     capistrano-fiftyfive (0.0.1)
