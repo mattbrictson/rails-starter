@@ -23,6 +23,7 @@ By using this template, you’ll hit the ground running with best practices for 
 
 More on our blog:
 
+* [Rails OS X Developer Guide – Installing an rbenv-based Rails stack on Mountain Lion][osx-rails]
 * [Lightning-Fast Sass Reloading in Rails 3.2][sass-reloading]
 * [SMACSS and Rails – A Styleguide for the Asset Pipeline][smacss-rails]
 
@@ -121,6 +122,7 @@ This project uses the `capistrano-fiftyfive` gem, which provides all recipes nee
 
 
 [Postmark]:https://postmarkapp.com
+[osx-rails]:http://blog.55minutes.com/2013/09/rails-os-x-install-guide/
 [sass-reloading]:http://blog.55minutes.com/2013/01/lightning-fast-sass-reloading-in-rails-32/
 [SMACSS]:http://smacss.com
 [smacss-rails]:http://blog.55minutes.com/2013/01/smacss-and-rails/
