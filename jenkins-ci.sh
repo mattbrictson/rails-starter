@@ -24,6 +24,7 @@ cp -n config/database.example.yml config/database.yml || true
 cp config/secrets.example.yml config/secrets.yml
 
 bundle install
+bundle exec rake db:drop || true
 bundle exec rake db:create db:migrate
 bundle exec rake db:seed
 
