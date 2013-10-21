@@ -1,7 +1,8 @@
 #!/bin/bash
 #
-# Script used to test this project in Jenkins. Assumes the Jenkins user is
-# using bash and rbenv. YMMV.
+# Script used to test this project in Jenkins and continuously deploy the
+# development branch to the default capistrano target. Assumes the Jenkins
+# user is using bash and rbenv. YMMV.
 #
 set -e
 
@@ -42,4 +43,13 @@ fi
 
 if bundle show license_finder &> /dev/null; then
   bundle exec license_finder
+fi
+
+# Run a capistrano deploy if we just built the "development" branch.
+if bundle show capistrano &> /dev/null; then
+  if [[ $GIT_BRANCH == origin/development ]]; then
+    eval `ssh-agent -s`
+    ssh-add
+    bundle exec cap fiftyfive:deploy:migrate_and_restart
+  fi
 fi
