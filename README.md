@@ -118,6 +118,14 @@ This project uses the `capistrano-fiftyfive` gem, which provides all recipes nee
     cap deploy:setup
     cap deploy:cold
 
+### Change the deployment settings
+
+To use capistrano you will need to update the deployment settings to match your staging and production environments.
+
+1. Review the contents of `config/deploy.rb`. Be sure the change the `:repository` to match your git repository URL.
+2. Update the IP addresses in `config/deploy/{staging,production}.rb` to match your staging and production servers.
+3. By default, `cap production deploy` will deploy from the `master` branch, and `cap [staging] deploy` will deploy from the `development` branch. Update the branch settings if you use a different branch policy.
+
 **Refer to the [capistrano-fiftyfive README][cap-55] more details and deployment instructions.**
 
 
@@ -137,4 +145,4 @@ This project uses the `capistrano-fiftyfive` gem, which provides all recipes nee
 [SimpleForm]:https://github.com/plataformatec/simple_form
 [bootstrap-examples]:http://simple-form-bootstrap.plataformatec.com.br/articles/new
 [Devise]:http://devise.plataformatec.com.br
-[cap-55]:https://github.com/55minutes/capistrano-fiftyfive/#usage
+[cap-55]:https://github.com/55minutes/capistrano-fiftyfive/#readme
