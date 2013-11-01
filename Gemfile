@@ -4,13 +4,13 @@ source 'https://rubygems.org'
 # with Rails 4. Get up-to-date compatibility information by uploading this
 # Gemfile to http://ready4rails4.net
 
-gem 'bcrypt-ruby',       '~> 3.0.0'
+gem 'bcrypt-ruby',       '~> 3.1.2'
 gem 'bourbon'
 gem 'coffee-rails',      '~> 4.0.0'
 gem 'jquery-rails'
 gem 'normalize-rails',   '~> 2.1.1'
 gem 'pg'
-gem 'rails',             '4.0.0'
+gem 'rails',             '4.0.1'
 gem 'sass-rails',        '~> 4.0.0'
 gem 'secure_headers'
 gem 'turbolinks'
