@@ -51,6 +51,7 @@ group :development do
   gem 'brakeman',                :require => false
   gem 'capistrano',              :require => false
   gem 'capistrano-fiftyfive',    :require => false, :github => '55minutes/capistrano-fiftyfive', :branch => :master
+  gem 'guard', '>= 2.2.2',       :require => false
   gem 'guard-livereload',        :require => false
   gem 'guard-rspec',             :require => false
   gem 'letter_opener'
