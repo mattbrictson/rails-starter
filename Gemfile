@@ -49,7 +49,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'brakeman',                :require => false
-  gem 'capistrano',              :require => false
+  gem 'capistrano', '~> 2.15',   :require => false
   gem 'capistrano-fiftyfive',    :require => false, :github => '55minutes/capistrano-fiftyfive', :branch => :master
   gem 'guard', '>= 2.2.2',       :require => false
   gem 'guard-livereload',        :require => false

@@ -281,7 +281,7 @@ DEPENDENCIES
   binding_of_caller
   bourbon
   brakeman
-  capistrano
+  capistrano (~> 2.15)
   capistrano-fiftyfive!
   capybara
   capybara-webkit
