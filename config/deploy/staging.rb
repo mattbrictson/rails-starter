@@ -1,5 +1,5 @@
-set :rails_env, 'staging'
-_cset :branch, 'development'
+set :branch, ENV.fetch("CAPISTRANO_BRANCH", "development")
 
-server 'staging.yoursitegoeshere.com',
-       :web, :app, :db, :backup, :primary => true
+server "staging.yoursitegoeshere.com",
+       :user => "deployer",
+       :roles => %w(app backup cron db web)

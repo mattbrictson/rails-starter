@@ -1,10 +1,10 @@
 GIT
   remote: git://github.com/55minutes/capistrano-fiftyfive.git
-  revision: 5e20bc7a83f78524920a0478b063779acb77006d
-  branch: master
+  revision: f02c5985777334450bde3714e41124743b95def1
+  branch: capistrano-3.0
   specs:
-    capistrano-fiftyfive (0.0.1)
-      capistrano (~> 2.15)
+    capistrano-fiftyfive (0.3.0)
+      capistrano (>= 3.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -60,12 +60,14 @@ GEM
       slim (>= 1.3.6, < 3.0)
       terminal-table (~> 1.4)
     builder (3.1.4)
-    capistrano (2.15.5)
-      highline
-      net-scp (>= 1.0.0)
-      net-sftp (>= 2.0.0)
-      net-ssh (>= 2.0.14)
-      net-ssh-gateway (>= 1.1.0)
+    capistrano (3.0.1)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 0.0.23)
+    capistrano-bundler (1.0.0)
+      capistrano (>= 3.0.0.pre)
+    capistrano-rails (1.0.0)
+      capistrano
     capybara (2.2.0)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -150,11 +152,7 @@ GEM
     multi_json (1.8.2)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
-    net-sftp (2.1.2)
-      net-ssh (>= 2.6.5)
     net-ssh (2.7.0)
-    net-ssh-gateway (1.2.0)
-      net-ssh (>= 2.6.5)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     normalize-rails (2.1.3)
@@ -238,7 +236,13 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    sshkit (1.1.0)
+      net-scp
+      net-ssh
+      term-ansicolor
     temple (0.6.7)
+    term-ansicolor (1.2.2)
+      tins (~> 0.8)
     terminal-notifier-guard (1.5.3)
     terminal-table (1.4.5)
     thin (1.6.1)
@@ -250,6 +254,7 @@ GEM
       atomic
     tilt (1.4.1)
     timers (1.1.0)
+    tins (0.13.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -279,8 +284,10 @@ DEPENDENCIES
   binding_of_caller
   bourbon
   brakeman
-  capistrano (~> 2.15)
+  capistrano (~> 3.0)
+  capistrano-bundler
   capistrano-fiftyfive!
+  capistrano-rails
   capybara
   capybara-webkit
   coffee-rails (~> 4.0.0)

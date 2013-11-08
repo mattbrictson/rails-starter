@@ -1,4 +1,13 @@
-load 'deploy'
-load 'deploy/assets'
-Dir['vendor/gems/*/recipes/*.rb','vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }
-load 'config/deploy' # remove this line to skip loading any of the default tasks
+# Load DSL and Setup Up Stages
+require 'capistrano/setup'
+
+# Includes default deployment tasks
+require 'capistrano/deploy'
+
+# Includes tasks from other gems included in your Gemfile
+require 'capistrano/bundler'
+require "capistrano/fiftyfive"
+require 'capistrano/rails/assets'
+
+# Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
+Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
