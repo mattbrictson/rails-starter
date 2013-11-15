@@ -84,6 +84,5 @@ module RailsStarter
     # Disable generators we don't need
     config.generators.stylesheets = false
     config.generators.javascripts = false
-    config.generators.helper = false
   end
 end
