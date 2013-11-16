@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bcrypt-ruby',  '~> 3.0.0'
 gem 'jquery-rails', '~> 3.0.0'
+gem 'marco-polo',   '~> 1.0'
 gem 'pg'
 gem 'rails',        '3.2.15'
 gem 'secure_headers'
