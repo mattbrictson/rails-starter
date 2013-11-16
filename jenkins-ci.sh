@@ -42,7 +42,7 @@ if bundle show brakeman &> /dev/null; then
 fi
 
 if bundle show license_finder &> /dev/null; then
-  bundle exec license_finder
+  bundle exec license_finder --quiet
 fi
 
 # Run a capistrano deploy if we just built the "development" branch.
