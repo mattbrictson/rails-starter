@@ -81,8 +81,8 @@ RailsStarter::Application.configure do
       :email_prefix => "[#{Rails.env.to_s.upcase}] ",
       :sender_address => %Q{"RailsStarter errors" <support@rails-starter.com>},
       :exception_recipients => %w(support@rails-starter.com),
-      :sections => %w{version} + ExceptionNotifier::EmailNotifier.default_options[:sections],
-      :background_sections => %w{version} + ExceptionNotifier::EmailNotifier.default_options[:background_sections],
+      :sections => %w(version request environment backtrace),
+      :background_sections => %w(version backtrace data),
       :email_format => :html
     }
 end
