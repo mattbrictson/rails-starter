@@ -16,7 +16,7 @@ cd $WORKSPACE
 if ! ruby -v &> /dev/null; then
   rbenv update
   rbenv install `cat .ruby-version`
-  gem install bundler --no-ri --no-rdoc
+  gem install bundler --no-document
   rbenv rehash
 fi
 
