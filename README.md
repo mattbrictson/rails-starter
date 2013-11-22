@@ -32,11 +32,11 @@ More on our blog:
 
 ### Install rbenv
 
-We recommend [rbenv][] and [ruby-build][] for managing Ruby installations. This template currently uses Ruby 2.0.0-p247.
+We recommend [rbenv][] and [ruby-build][] for managing Ruby installations. This template currently uses Ruby 2.0.0-p353.
 
 1. Install rbenv into `~/.rbenv` using the fantastic [rbenv-installer][] script.
-2. Run `rbenv install 2.0.0-p247` (this will take several minutes).
-3. Optional: make 2.0.0-p247 your default ruby by running `rbenv global 2.0.0-p247`.
+2. Run `rbenv install 2.0.0-p353` (this will take several minutes).
+3. Optional: make 2.0.0-p353 your default ruby by running `rbenv global 2.0.0-p353`.
 
 ### Install Qt
 
