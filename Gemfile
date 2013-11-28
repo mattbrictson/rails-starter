@@ -44,6 +44,7 @@ gem 'uglifier',          '>= 1.3.0'
 # Note `:require => false` for those gems that are purely command-line tools.
 #
 group :development do
+  gem 'annotate', '>=2.5.0'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'brakeman',                :require => false
