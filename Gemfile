@@ -20,7 +20,6 @@ gem 'uglifier',          '>= 1.3.0'
 # Other gems to consider
 # gem 'activeadmin', '0.6.0' # `rails g active_admin:assets` when upgrading
 # gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
-# gem 'compass-rails'
 # gem 'devise'
 # gem 'draper'
 # gem 'dragonfly'
