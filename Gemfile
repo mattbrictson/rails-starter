@@ -10,7 +10,6 @@ gem 'turbolinks'
 
 # Other gems to consider
 # gem 'activeadmin', '0.6.0' # `rails g active_admin:assets` when upgrading
-# gem 'cancan'
 # gem 'devise'
 # gem 'draper'
 # gem 'dragonfly'
@@ -19,6 +18,7 @@ gem 'turbolinks'
 # gem 'jbuilder'
 # gem 'kaminari'
 # gem 'mail_view'
+# gem 'pundit'
 # gem 'redcarpet'
 # gem 'simple_form'
 # gem 'state_machine'
@@ -47,6 +47,7 @@ end
 # Note `:require => false` for those gems that are purely command-line tools.
 #
 group :development do
+  gem 'annotate', '>=2.5.0'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'brakeman',                :require => false
