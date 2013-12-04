@@ -66,6 +66,7 @@ group :development do
   # gem 'guard-shell', :require => false
   # gem 'license_finder', :require => false
   # gem 'rails-erd'
+  # gem 'ruby-prof', :require => false
 end
 
 
