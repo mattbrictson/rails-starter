@@ -50,7 +50,7 @@ group :development do
   gem 'brakeman',                :require => false
   gem 'capistrano', '~> 3.0',    :require => false
   gem 'capistrano-bundler',      :require => false
-  gem 'capistrano-fiftyfive',    :require => false, :github => '55minutes/capistrano-fiftyfive', :branch => "capistrano-3.0"
+  gem 'capistrano-fiftyfive',    :require => false, :github => '55minutes/capistrano-fiftyfive'
   gem 'capistrano-rails',        :require => false
   gem 'guard', '>= 2.2.2',       :require => false
   gem 'guard-livereload',        :require => false
