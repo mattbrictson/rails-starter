@@ -38,7 +38,7 @@ else
 fi
 
 if bundle show brakeman &> /dev/null; then
-  bundle exec brakeman
+  bundle exec brakeman --no-progress
 fi
 
 if bundle show license_finder &> /dev/null; then
