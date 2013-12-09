@@ -1,7 +1,7 @@
 yml_file = "#{Rails.root}/config/secrets.yml"
 
 yml_secrets = if File.exist?(yml_file)
-  YAML.load_file(yml_file)[Rails.env]
+  YAML.load_file(yml_file)[Rails.env] || {}
 else
   {}
 end
