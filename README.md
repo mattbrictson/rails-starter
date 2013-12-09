@@ -110,21 +110,31 @@ Twitter Bootstrap’s JavaScripts and CSS will now be available throughout your 
 **Protip:** If you plan on using [Devise][], make sure you install SimpleForm first! Then when you install Devise, it will automatically detect SimpleForm and generate its views with `simple_form_for`.
 
 
-## Using the provided Capistrano recipes
+## Using the provided Capistrano 3.x recipes
 
-This project uses the `capistrano-fiftyfive` gem, which provides all recipes needed to set up and deploy on Ubuntu 12.04. It's as easy as:
+This project uses the `capistrano-fiftyfive` gem, which provides all recipes needed to set up and deploy on Ubuntu 12.04. It's super simple.
 
-    cap deploy:install
-    cap deploy:setup
-    cap deploy:cold
+### Purchase a VPS
 
-### Change the deployment settings
+Using a provider like [DigitalOcean](http://digitalocean.com), purchase an Ubuntu 12.04 LTS virtual private server. **Make sure to install your SSH key for the root user.**
 
-To use capistrano you will need to update the deployment settings to match your staging and production environments.
+Make note of the IP address of the VPS. Then:
+
+### Change the deployment settings of your project
+
+To use capistrano you will need to update the deployment settings to match your VPS.
 
 1. Review the contents of `config/deploy.rb`. Be sure the change the `:repository` to match your git repository URL.
-2. Update the IP addresses in `config/deploy/{staging,production}.rb` to match your staging and production servers.
-3. By default, `cap production deploy` will deploy from the `master` branch, and `cap [staging] deploy` will deploy from the `development` branch. Update the branch settings if you use a different branch policy.
+2. Update the IP address in `config/deploy/staging.rb` to match the IP of the VPS you just purchased.
+3. By default, `cap production deploy` will deploy from the `master` branch, and `cap staging deploy` will deploy from the `development` branch. Update the branch settings if you use a different branch policy.
+
+### Capistrano takes care of the rest!
+
+Don't forget to `git push` your code so that capistrano can deploy it. Make sure you've pushed the branch that capistrano is expecting in `staging.rb`. Then run these commands and follow the prompts to install Nginx, SSL, PostgreSQL, Ruby (the whole stack!):
+
+     cap staging provision
+     cap staging deploy:migrate_and_restart
+
 
 **Refer to the [capistrano-fiftyfive README][cap-55] more details and deployment instructions.**
 
