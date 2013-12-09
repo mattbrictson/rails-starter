@@ -50,6 +50,6 @@ if bundle show capistrano &> /dev/null; then
   if [[ $GIT_BRANCH == origin/development ]]; then
     eval `ssh-agent -s`
     ssh-add
-    bundle exec cap fiftyfive:deploy:migrate_and_restart
+    bundle exec cap staging deploy:migrate_and_restart
   fi
 fi
