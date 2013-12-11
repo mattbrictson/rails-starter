@@ -1,2 +1,1 @@
-tap homebrew/dupes
-install apple-gcc42 autoconf pkg-config postgresql qt
+install homebrew/dupes/apple-gcc42 autoconf pkg-config postgresql qt
