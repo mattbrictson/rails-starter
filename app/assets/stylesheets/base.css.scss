@@ -8,7 +8,7 @@
 // See "Undoing styles" in http://csswizardry.com/2012/11/code-smells-in-css/
 
 html {
-  color: $near-black;
+  color: $black;
   font-size: $base-font-size;
   font-family: Georgia, serif;
   line-height: $base-line-height;
@@ -19,4 +19,35 @@ p {
     top: 0;
     bottom: $baseline;
   };
+}
+
+// The following link styles are courtesy of http://clrs.cc.
+// Copyright (c) 2014 @mrmrs (MIT license)
+
+a {
+  text-decoration:    none;
+  -webkit-transition: color .3s ease-in-out;
+  transition:         color .3s ease-in-out;
+}
+
+a:link {
+  color: $blue;
+  -webkit-transition: color .3s ease-in-out;
+  transition:         color .3s ease-in-out;
+}
+
+a:visited {
+  color: $purple;
+}
+
+a:hover {
+  color: $aqua;
+  -webkit-transition: color .3s ease-in-out;
+  transition:         color .3s ease-in-out;
+}
+
+a:active {
+  color: $orange;
+  -webkit-transition: color .3s ease-in-out;
+  transition:         color .3s ease-in-out;
 }
