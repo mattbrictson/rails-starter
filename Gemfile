@@ -5,7 +5,7 @@ gem 'dotenv-rails'
 gem 'jquery-rails', '~> 3.0.0'
 gem 'marco-polo',   '~> 1.0'
 gem 'pg'
-gem 'rails',        '3.2.16'
+gem 'rails',        '3.2.17'
 gem 'secure_headers'
 gem 'turbolinks'
 
