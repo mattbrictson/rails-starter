@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'bcrypt-ruby',  '~> 3.0.0'
+gem 'dotenv-rails'
 gem 'jquery-rails', '~> 3.0.0'
 gem 'marco-polo',   '~> 1.0'
 gem 'pg'
@@ -51,7 +52,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'brakeman',                :require => false
-  gem 'capistrano', '~> 3.0',    :require => false
+  gem 'capistrano', '~> 3.1.0',  :require => false
   gem 'capistrano-bundler',      :require => false
   gem 'capistrano-fiftyfive',    :require => false, :github => '55minutes/capistrano-fiftyfive'
   gem 'capistrano-rails',        :require => false
