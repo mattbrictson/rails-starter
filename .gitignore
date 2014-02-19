@@ -9,6 +9,7 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
+/log/*.log.*
 /tmp
 
 # Ignore results of `rake assets:precompile`
