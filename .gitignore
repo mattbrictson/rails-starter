@@ -16,4 +16,4 @@
 
 # Never check passwords into source control!
 /config/database.yml
-/config/secrets.yml
+/.env

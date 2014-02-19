@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-RailsStarter::Application.config.secret_key_base = SECRETS.fetch(:rails_secret_key_base)
+RailsStarter::Application.config.secret_key_base = ENV.fetch("RAILS_SECRET_KEY_BASE")

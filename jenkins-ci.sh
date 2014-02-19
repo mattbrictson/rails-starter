@@ -22,7 +22,7 @@ fi
 
 # Set up local config (don't overwrite database.yml in case it's customized)
 cp -n config/database.example.yml config/database.yml || true
-cp config/secrets.example.yml config/secrets.yml
+cp example.env .env
 
 bundle install
 bundle exec rake db:drop || true

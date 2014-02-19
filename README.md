@@ -9,6 +9,7 @@ This template targets the following server stack:
 * Unicorn
 * Nginx
 * rbenv
+* [dotenv][]
 * [Postmark][] for mail delivery
 
 By using this template, you’ll hit the ground running with best practices for productive Rails and front-end development:
@@ -18,7 +19,7 @@ By using this template, you’ll hit the ground running with best practices for 
 * Up-to-date rbenv and bundler gem management techniques
 * [SMACSS][] for organizing stylesheets
 * Capistrano recipes to make deployment easy
-* `secrets.yml` for storing encryption keys and secret tokens safely outside of source control
+* `.env` for storing encryption keys and secret tokens safely outside of source control
 * An easy way to add Twitter Bootstrap, should you choose to do so
 
 More on our blog:
@@ -61,7 +62,7 @@ To install the Qt libraries, [follow these instructions][qt-instructions]. Homeb
 
 ### Set up your local configuration
 
-1. Run `cp config/secrets.example.yml config/secrets.yml` to make a local version of the secret settings.
+1. Run `cp example.env .env` to make a local version of the app settings.
 2. Run `cp config/database.example.yml config/database.yml` to make a local version of the database config.
 
 ### Create the database
@@ -139,6 +140,7 @@ Don't forget to `git push` your code so that capistrano can deploy it. Make sure
 **Refer to the [capistrano-fiftyfive README][cap-55] more details and deployment instructions.**
 
 
+[dotenv]:https://github.com/bkeepers/dotenv
 [Postmark]:https://postmarkapp.com
 [osx-rails]:http://blog.55minutes.com/2013/09/rails-os-x-install-guide/
 [sass-reloading]:http://blog.55minutes.com/2013/01/lightning-fast-sass-reloading-in-rails-32/
