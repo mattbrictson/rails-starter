@@ -38,4 +38,7 @@ RailsStarter::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # Limit log file size to 20MB with one backup
+  config.logger = Logger.new(config.paths['log'].first, 1, 20971520)
 end

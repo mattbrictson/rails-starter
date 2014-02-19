@@ -37,6 +37,9 @@ RailsStarter::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
+  # Limit log file size to 20MB with one backup
+  config.logger = Logger.new(config.paths['log'].first, 1, 20971520)
+
   # Automatically inject JavaScript needed for LiveReload
   config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
 end
