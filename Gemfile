@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 # Gemfile to http://ready4rails4.net
 
 gem 'bcrypt-ruby',       '~> 3.1.2'
+gem 'bootstrap-sass',    '~> 3.1.1'
 gem 'bourbon'
 gem 'coffee-rails',      '~> 4.0.0'
 gem 'dotenv-rails'
