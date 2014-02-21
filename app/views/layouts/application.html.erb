@@ -1,36 +1,9 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="ie ie6"><![endif]-->
-<!--[if IE 7]><html class="ie ie7"><![endif]-->
-<!--[if IE 8]><html class="ie ie8"><![endif]-->
-<!--[if IE 9]><html class="ie ie9"><![endif]-->
-<!--[if gt IE 9]><html class="ie"><![endif]-->
-<!--[if !IE]><!--><html><!--<![endif]-->
-  <head>
-    <!-- RailsStarter <%= Rails.application.config.version %> (<%= l(Rails.application.config.version_date) %>) -->
+<%# The "application" layout is the default layout. It extends "base"  %>
+<%# to include things like header, footer, and alerts that are common  %>
+<%# to most (but not all) views.                                       %>
 
-    <%# CSS should go closest to the top of the document as possible. %>
-    <%= stylesheet_link_tag("application", "data-turbolinks-track" => true) %>
+<%= render("shared/alerts") %>
 
-    <%# JavaScript must be in head for Turbolinks to work %>
-    <%= javascript_include_tag("application", "data-turbolinks-track" => true) %>
+<%= yield %>
 
-    <%= yield(:head) %>
-
-    <meta charset="utf8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%# Specifies the default name of home screen bookmark in iOS 6+ %>
-    <meta name="apple-mobile-web-app-title" content="RailsStarter">
-
-    <%= csrf_meta_tags %>
-
-    <title>
-      <%= yield(:title) + " – " if content_for?(:title) %>
-      RailsStarter
-    </title>
-  </head>
-  <body>
-
-    <%= yield %>
-
-  </body>
-</html>
+<% parent_layout "base" %>
