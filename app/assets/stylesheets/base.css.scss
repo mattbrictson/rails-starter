@@ -7,47 +7,6 @@
 // Tip: only define styles that you don't plan on overriding elsewhere.
 // See "Undoing styles" in http://csswizardry.com/2012/11/code-smells-in-css/
 
-html {
-  color: $black;
-  font-size: $base-font-size;
-  font-family: $serif;
-  line-height: $base-line-height;
-}
-
-p {
-  margin: {
-    top: 0;
-    bottom: $baseline;
-  };
-}
-
-// The following link styles are courtesy of http://clrs.cc.
-// Copyright (c) 2014 @mrmrs (MIT license)
-
-a {
-  text-decoration:    none;
-  -webkit-transition: color .3s ease-in-out;
-  transition:         color .3s ease-in-out;
-}
-
-a:link {
-  color: $blue;
-  -webkit-transition: color .3s ease-in-out;
-  transition:         color .3s ease-in-out;
-}
-
-a:visited {
-  color: $purple;
-}
-
-a:hover {
-  color: $aqua;
-  -webkit-transition: color .3s ease-in-out;
-  transition:         color .3s ease-in-out;
-}
-
-a:active {
-  color: $orange;
-  -webkit-transition: color .3s ease-in-out;
-  transition:         color .3s ease-in-out;
-}
+// If you find yourself wanting to use Bootstrap's mixins throughout your
+// stylesheets, import them here, like this:
+// @import "bootstrap/mixins.scss";
