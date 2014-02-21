@@ -60,8 +60,6 @@ group :development do
   gem 'quiet_assets'
   gem 'rack-livereload'
   gem 'rb-fsevent',              :require => false
-  gem 'spring'
-  gem 'spring-commands-rspec'
   gem 'terminal-notifier-guard', :require => false
   gem 'thin',                    :require => false
   gem 'xray-rails'
