@@ -2,9 +2,9 @@ require 'spec_helper'
 
 feature 'Home' do
 
-  it 'should show Home#index' do
+  it 'should show Home' do
     visit(homepage)
-    expect(page).to have_content("Home#index")
+    expect(first("h1")).to have_content("Home")
   end
 
   it 'should not have JavaScript errors', :js => true do
