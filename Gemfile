@@ -20,14 +20,11 @@ gem 'uglifier',          '>= 1.3.0'
 
 # Other gems to consider
 # gem 'activeadmin', '0.6.0' # `rails g active_admin:assets` when upgrading
-# gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
 # gem 'devise'
-# gem 'draper'
 # gem 'dragonfly'
 # gem 'facets', :require => false
 # gem 'font-awesome-rails'
 # gem 'friendly_id'
-# gem 'informal'
 # gem 'jbuilder', '~> 1.2'
 # gem 'jquery-ui-rails'
 # gem 'kaminari'
@@ -37,7 +34,6 @@ gem 'uglifier',          '>= 1.3.0'
 # gem 'rack-mini-profiler'
 # gem 'redcarpet'
 # gem 'select2-rails'
-# gem 'simple_form'
 # gem 'state_machine'
 
 
