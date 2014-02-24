@@ -6,6 +6,15 @@ GIT
       capistrano (>= 3.1.0)
       sshkit (>= 1.3.0)
 
+GIT
+  remote: git://github.com/capistrano/sshkit.git
+  revision: 723d0a0d7e8fe3c996341c49b5b652834296bf25
+  specs:
+    sshkit (1.3.0)
+      net-scp (>= 1.1.2)
+      net-ssh
+      term-ansicolor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -246,10 +255,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sshkit (1.3.0)
-      net-scp (>= 1.1.2)
-      net-ssh
-      term-ansicolor
     temple (0.6.7)
     term-ansicolor (1.3.0)
       tins (~> 1.0)
@@ -322,6 +327,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.0)
   secure_headers
+  sshkit!
   terminal-notifier-guard
   thin
   turbolinks
