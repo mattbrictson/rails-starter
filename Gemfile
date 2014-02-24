@@ -12,7 +12,6 @@ gem 'turbolinks'
 # Other gems to consider
 # gem 'activeadmin', '0.6.0' # `rails g active_admin:assets` when upgrading
 # gem 'devise'
-# gem 'draper'
 # gem 'dragonfly'
 # gem 'facets', :require => false
 # gem 'friendly_id'
@@ -21,7 +20,6 @@ gem 'turbolinks'
 # gem 'mail_view'
 # gem 'pundit'
 # gem 'redcarpet'
-# gem 'simple_form'
 # gem 'state_machine'
 
 
@@ -37,7 +35,6 @@ group :assets do
   gem 'uglifier',        '>= 1.0.3'
 
   # Other asset pipeline gems to consider
-  # gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
   # gem 'font-awesome-rails'
   # gem 'jquery-ui-rails'
   # gem 'neat'
@@ -54,7 +51,8 @@ group :development do
   gem 'brakeman',                :require => false
   gem 'capistrano', '~> 3.1.0',  :require => false
   gem 'capistrano-bundler',      :require => false
-  gem 'capistrano-fiftyfive',    :require => false, :github => '55minutes/capistrano-fiftyfive'
+  gem 'capistrano-fiftyfive',    :require => false,
+                                 :github => '55minutes/capistrano-fiftyfive'
   gem 'capistrano-rails',        :require => false
   gem 'guard', '>= 2.2.2',       :require => false
   gem 'guard-livereload',        :require => false
@@ -63,6 +61,8 @@ group :development do
   gem 'quiet_assets'
   gem 'rack-livereload'
   gem 'rb-fsevent',              :require => false
+  gem 'sshkit',                  :require => false,
+                                 :github => 'capistrano/sshkit'
   gem 'terminal-notifier-guard', :require => false
   gem 'thin',                    :require => false
   gem 'xray-rails'
