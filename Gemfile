@@ -49,7 +49,8 @@ group :development do
   gem 'brakeman',                :require => false
   gem 'capistrano', '~> 3.1.0',  :require => false
   gem 'capistrano-bundler',      :require => false
-  gem 'capistrano-fiftyfive',    :require => false, :github => '55minutes/capistrano-fiftyfive'
+  gem 'capistrano-fiftyfive',    :require => false,
+                                 :github => '55minutes/capistrano-fiftyfive'
   gem 'capistrano-rails',        :require => false
   gem 'guard', '>= 2.2.2',       :require => false
   gem 'guard-livereload',        :require => false
@@ -58,6 +59,8 @@ group :development do
   gem 'quiet_assets'
   gem 'rack-livereload'
   gem 'rb-fsevent',              :require => false
+  gem 'sshkit',                  :require => false,
+                                 :github => 'capistrano/sshkit'
   gem 'terminal-notifier-guard', :require => false
   gem 'thin',                    :require => false
   gem 'xray-rails'
