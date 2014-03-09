@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 # with Rails 4. Get up-to-date compatibility information by uploading this
 # Gemfile to http://ready4rails4.net
 
+gem 'autoprefixer-rails'
 gem 'bcrypt-ruby',       '~> 3.1.2'
 gem 'bourbon'
 gem 'coffee-rails',      '~> 4.0.0'

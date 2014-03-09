@@ -25,15 +25,13 @@ p {
 // Copyright (c) 2014 @mrmrs (MIT license)
 
 a {
-  text-decoration:    none;
-  -webkit-transition: color .3s ease-in-out;
-  transition:         color .3s ease-in-out;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
 }
 
 a:link {
   color: $blue;
-  -webkit-transition: color .3s ease-in-out;
-  transition:         color .3s ease-in-out;
+  transition: color .3s ease-in-out;
 }
 
 a:visited {
@@ -42,12 +40,10 @@ a:visited {
 
 a:hover {
   color: $aqua;
-  -webkit-transition: color .3s ease-in-out;
-  transition:         color .3s ease-in-out;
+  transition: color .3s ease-in-out;
 }
 
 a:active {
   color: $orange;
-  -webkit-transition: color .3s ease-in-out;
-  transition:         color .3s ease-in-out;
+  transition: color .3s ease-in-out;
 }
