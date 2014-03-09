@@ -1,0 +1,6 @@
+browsers:
+  # Uncomment/replace these to customize autoprefixer behavior.
+  # See: https://github.com/ai/autoprefixer#browsers
+  # - "last 1 version"
+  # - "> 1%"
+  # - "Explorer 10"

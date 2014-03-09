@@ -27,6 +27,7 @@ gem 'turbolinks'
 # in production environments by default.
 #
 group :assets do
+  gem 'autoprefixer-rails'
   gem 'bourbon'
   gem 'coffee-rails',    '~> 3.2.1'
   gem 'normalize-rails', '~> 3.0.0'
