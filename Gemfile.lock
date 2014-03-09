@@ -54,6 +54,8 @@ GEM
       rake (>= 0.8.7)
     arel (4.0.2)
     atomic (1.1.15)
+    autoprefixer-rails (0.8.20131213)
+      execjs
     bcrypt (3.1.7)
     bcrypt-ruby (3.1.5)
       bcrypt (>= 3.1.3)
@@ -308,6 +310,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (>= 2.5.0)
+  autoprefixer-rails
   bcrypt-ruby (~> 3.1.2)
   better_errors
   binding_of_caller
@@ -326,8 +329,8 @@ DEPENDENCIES
   dotenv-rails
   exception_notification
   factory_girl_rails
-  fuubar
   font-awesome-rails
+  fuubar
   guard (>= 2.2.2)
   guard-livereload
   guard-rspec
