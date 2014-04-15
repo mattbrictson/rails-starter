@@ -48,7 +48,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'brakeman',                :require => false
-  gem 'capistrano', '~> 3.1.0',  :require => false
+  gem 'capistrano', '~> 3.2.0',  :require => false
   gem 'capistrano-bundler',      :require => false
   gem 'capistrano-fiftyfive',    :require => false,
                                  :github => '55minutes/capistrano-fiftyfive'
@@ -60,8 +60,7 @@ group :development do
   gem 'quiet_assets'
   gem 'rack-livereload'
   gem 'rb-fsevent',              :require => false
-  gem 'sshkit',                  :require => false,
-                                 :github => 'capistrano/sshkit'
+  gem 'sshkit', '~> 1.4.0',      :require => false
   gem 'terminal-notifier-guard', :require => false
   gem 'thin',                    :require => false
   gem 'xray-rails'
