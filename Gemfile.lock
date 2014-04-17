@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/55minutes/capistrano-fiftyfive.git
-  revision: 5728e0070283f5ba2534afe5fd21e444ec1de20f
+  revision: f9043e8c9c47b70b94ba7069b2a415aef13c88ad
   specs:
     capistrano-fiftyfive (0.3.0)
       capistrano (>= 3.1.0)
@@ -213,7 +213,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
-    rake (10.2.2)
+    rake (10.3.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
