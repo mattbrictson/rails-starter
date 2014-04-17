@@ -48,10 +48,11 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'brakeman',                :require => false
-  gem 'capistrano', '~> 3.2.0',  :require => false
+  gem 'capistrano', '~> 3.1.0',  :require => false
   gem 'capistrano-bundler',      :require => false
   gem 'capistrano-fiftyfive',    :require => false,
-                                 :github => '55minutes/capistrano-fiftyfive'
+                                 :github => '55minutes/capistrano-fiftyfive',
+                                 :branch => 'master'
   gem 'capistrano-rails',        :require => false
   gem 'guard', '>= 2.2.2',       :require => false
   gem 'guard-livereload',        :require => false

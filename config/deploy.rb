@@ -1,5 +1,5 @@
 set :application, "rails-starter"
-set :repo_url, "ssh://git@bitbucket.org/55minutes/rails-starter.git"
+set :repo_url, "git@github.com:55minutes/rails-starter.git"
 
 # Project-specific overrides go here.
 # For list of variables that can be customized, see:
