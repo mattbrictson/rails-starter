@@ -46,7 +46,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'brakeman',                :require => false
-  gem 'capistrano', '~> 3.1.0',  :require => false
+  gem 'capistrano', '~> 3.2.1',  :require => false
   gem 'capistrano-bundler',      :require => false
   gem 'capistrano-fiftyfive',    :require => false,
                                  :github => '55minutes/capistrano-fiftyfive',
