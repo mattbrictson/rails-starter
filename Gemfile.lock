@@ -309,6 +309,7 @@ DEPENDENCIES
   capybara-webkit
   coffee-rails (~> 4.0.0)
   database_cleaner
+  dotenv-deployment
   dotenv-rails
   exception_notification
   factory_girl_rails

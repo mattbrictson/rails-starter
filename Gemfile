@@ -95,6 +95,7 @@ end
 # Gems needed in production environments only.
 #
 group :production, :staging do
+  gem 'dotenv-deployment'
   gem 'exception_notification'
   gem 'postmark-rails'
   gem 'unicorn', :require => false
