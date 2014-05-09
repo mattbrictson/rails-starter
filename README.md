@@ -33,11 +33,11 @@ More on our blog:
 
 ### Install rbenv
 
-We recommend [rbenv][] and [ruby-build][] for managing Ruby installations. This template currently uses Ruby 2.1.1.
+We recommend [rbenv][] and [ruby-build][] for managing Ruby installations. This template currently uses Ruby 2.1.2.
 
 1. Install rbenv into `~/.rbenv` using the fantastic [rbenv-installer][] script.
-2. Run `rbenv install 2.1.1` (this will take several minutes).
-3. Optional: make 2.1.1 your default ruby by running `rbenv global 2.1.1`.
+2. Run `rbenv install 2.1.2` (this will take several minutes).
+3. Optional: make 2.1.2 your default ruby by running `rbenv global 2.1.2`.
 
 ### Install Qt
 
