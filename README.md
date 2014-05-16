@@ -1,8 +1,17 @@
 # 55minutes/rails-starter
 
-**A simple template for starting new Rails 4 projects using Bootstrap styles.**
+**A simple template for starting new Rails 4 projects.**
 
-This template targets the following server stack:
+## How this repository is organized
+
+There are two branches of this project that are regularly maintained: `master` and `bootstrap`.
+
+* The `master` branch contains the newest rails-starter template. Most projects are best served by starting from this branch.
+* The `bootstrap` branch contains all the latest code from master, *plus* extra gems, views, and helpers specific to Twitter Bootstrap. If you are starting a project where you plan to use Twitter Bootstrap, the bootstrap branch is what you need.
+
+## About rails-starter
+
+Rails-stater is a project template for Rails 4 projects that is pre-configured for Capistrano-based deployment. This template targets the following server stack:
 
 * Ubuntu 12.04 LTS
 * PostgreSQL
@@ -20,7 +29,7 @@ By using this template, you’ll hit the ground running with best practices for 
 * [SMACSS][] for organizing stylesheets
 * Capistrano recipes to make deployment easy
 * `.env` for storing encryption keys and secret tokens safely outside of source control
-* Built-in Bootstrap templates, layouts, and form helpers
+* An easy way to add Twitter Bootstrap, should you choose to do so (use the `bootstrap` branch)
 
 More on our blog:
 
@@ -47,7 +56,7 @@ To install the Qt libraries, [follow these instructions][qt-instructions]. Homeb
 
 ### Create a Rails project from the template
 
-1. Download and extract the [tarball of the 55minutes/rails-starter repository][tarball]; this will be the start of your new Rails project.
+1. Download and extract either the [master][master-zip] (plain starter) or the [bootstrap][bootstrap-zip] (Twitter Bootstrap-themed starter) ZIP archive of the rails-starter repository; this will be the start of your new Rails project.
 2. Globally replace `rails-starter` and `RailsStarter` with the desired name of your project.
 3. `cd` into the project and run `git init && git add . && git commit -m "init"` to initialize a git repository.
 
@@ -78,10 +87,6 @@ To install the Qt libraries, [follow these instructions][qt-instructions]. Homeb
 
 **Protip:** Install [this handy bash script][r] to consolidate `rails` and `rake` into a single `r` shortcut.
 
-
-## Twitter Bootstrap integration
-
-TODO
 
 ## Using the provided Capistrano 3.x recipes
 
@@ -124,7 +129,8 @@ Don't forget to `git push` your code so that capistrano can deploy it. Make sure
 [capybara-webkit]:https://github.com/thoughtbot/capybara-webkit
 [qt-instructions]:https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
 [rubygems-bundler]:https://github.com/mpapis/rubygems-bundler
-[tarball]:https://github.com/55minutes/rails-starter/tarball/bootstrap
+[master-zip]:https://github.com/55minutes/rails-starter/archive/master.zip
+[bootstrap-zip]:https://github.com/55minutes/rails-starter/archive/bootstrap.zip
 [r]:http://blog.55minutes.com/post/15353228566/invoke-rails-and-rake-faster-and-with-fewer-mistakes
 [SimpleForm]:https://github.com/plataformatec/simple_form
 [bootstrap-examples]:http://simple-form-bootstrap.plataformatec.com.br/articles/new
