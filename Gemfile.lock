@@ -1,15 +1,16 @@
 GIT
   remote: git://github.com/55minutes/capistrano-fiftyfive.git
-  revision: afcb84900d406f9c78841f060347bec239201a1a
+  revision: 9527c403920fba1a4c5ee299df4ca22fdb1e2011
   branch: master
   specs:
     capistrano-fiftyfive (0.3.0)
       capistrano (>= 3.2.1)
+      colorize
       sshkit (>= 1.4.0)
 
 GIT
   remote: git://github.com/bootstrap-ruby/rails-bootstrap-forms.git
-  revision: c54c35f6fb6ce95b66adb07ce0815d1ba4595700
+  revision: 5048f09a7a67089f69597418dd3ad51a9d430182
   specs:
     bootstrap_form (2.1.1)
 
@@ -45,7 +46,7 @@ GEM
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
     arel (4.0.2)
-    autoprefixer-rails (1.1.20140512)
+    autoprefixer-rails (1.1.20140523)
       execjs
     bcrypt (3.1.7)
     better_errors (1.1.0)
@@ -55,7 +56,7 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
-    bourbon (3.2.1)
+    bourbon (3.2.3)
       sass (~> 3.2)
       thor
     brakeman (2.5.0)
@@ -91,9 +92,6 @@ GEM
       json
     celluloid (0.15.2)
       timers (~> 1.1.0)
-    celluloid-io (0.15.0)
-      celluloid (>= 0.15.0)
-      nio4r (>= 0.5.0)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -102,8 +100,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    colorize (0.7.3)
     daemons (1.1.9)
-    database_cleaner (1.2.0)
+    database_cleaner (1.3.0)
     debug_inspector (0.0.2)
     diff-lcs (1.2.5)
     dotenv (0.11.1)
@@ -127,9 +126,9 @@ GEM
       railties (>= 3.0.0)
     fastercsv (1.5.5)
     ffi (1.9.3)
-    font-awesome-rails (4.0.3.2)
+    font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
-    formatador (0.2.4)
+    formatador (0.2.5)
     fuubar (1.3.3)
       rspec (>= 2.14.0, < 3.1.0)
       ruby-progressbar (~> 1.4)
@@ -139,7 +138,7 @@ GEM
       lumberjack (~> 1.0)
       pry (>= 0.9.12)
       thor (>= 0.18.1)
-    guard-livereload (2.1.2)
+    guard-livereload (2.2.0)
       em-websocket (~> 0.5)
       guard (~> 2.0)
       multi_json (~> 1.8)
@@ -161,9 +160,8 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.2.0)
       launchy (~> 2.2)
-    listen (2.7.4)
+    listen (2.7.5)
       celluloid (>= 0.15.2)
-      celluloid-io (>= 0.15.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     lumberjack (1.0.5)
@@ -173,15 +171,14 @@ GEM
     marco-polo (1.2.0)
     method_source (0.8.2)
     mime-types (1.25.1)
-    mini_portile (0.5.3)
+    mini_portile (0.6.0)
     minitest (4.7.5)
-    multi_json (1.10.0)
+    multi_json (1.10.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (2.9.0)
-    nio4r (1.0.0)
-    nokogiri (1.6.1)
-      mini_portile (~> 0.5.0)
+    net-ssh (2.9.1)
+    nokogiri (1.6.2.1)
+      mini_portile (= 0.6.0)
     normalize-rails (3.0.1)
     pg (0.17.1)
     polyglot (0.3.4)
@@ -216,7 +213,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
-    rake (10.3.1)
+    rake (10.3.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.4)
       ffi (>= 0.5.0)
@@ -236,7 +233,7 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
-    ruby-progressbar (1.5.0)
+    ruby-progressbar (1.5.1)
     ruby2ruby (2.0.8)
       ruby_parser (~> 3.1)
       sexp_processor (~> 4.0)
@@ -280,7 +277,7 @@ GEM
     thread_safe (0.3.3)
     tilt (1.4.1)
     timers (1.1.0)
-    tins (1.2.0)
+    tins (1.3.0)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
