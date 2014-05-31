@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/55minutes/capistrano-fiftyfive.git
-  revision: 9527c403920fba1a4c5ee299df4ca22fdb1e2011
+  revision: 2f3f9aa47382fbfc1545086cda032da80937c52c
   branch: master
   specs:
     capistrano-fiftyfive (0.3.0)
@@ -250,13 +250,11 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sshkit (1.4.0)
+    sshkit (1.5.0)
+      colorize
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-      term-ansicolor
     temple (0.6.7)
-    term-ansicolor (1.3.0)
-      tins (~> 1.0)
     terminal-notifier-guard (1.5.3)
     terminal-table (1.4.5)
     thin (1.6.2)
@@ -267,7 +265,6 @@ GEM
     thread_safe (0.3.3)
     tilt (1.4.1)
     timers (1.1.0)
-    tins (1.3.0)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -328,7 +325,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.2)
   secure_headers
-  sshkit (~> 1.4.0)
+  sshkit (~> 1.5.0)
   terminal-notifier-guard
   thin
   turbolinks

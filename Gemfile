@@ -59,7 +59,7 @@ group :development do
   gem 'quiet_assets'
   gem 'rack-livereload'
   gem 'rb-fsevent',              :require => false
-  gem 'sshkit', '~> 1.4.0',      :require => false
+  gem 'sshkit', '~> 1.5.0',      :require => false
   gem 'terminal-notifier-guard', :require => false
   gem 'thin',                    :require => false
   gem 'xray-rails'
