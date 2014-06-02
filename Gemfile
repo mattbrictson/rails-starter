@@ -47,23 +47,21 @@ group :development do
   gem 'annotate', '>=2.5.0'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'brakeman',                :require => false
-  gem 'capistrano', '~> 3.2.1',  :require => false
-  gem 'capistrano-bundler',      :require => false
-  gem 'capistrano-fiftyfive',    :require => false,
-                                 :github => '55minutes/capistrano-fiftyfive',
-                                 :branch => 'master'
-  gem 'capistrano-rails',        :require => false
-  gem 'guard', '>= 2.2.2',       :require => false
-  gem 'guard-livereload',        :require => false
-  gem 'guard-rspec',             :require => false
+  gem 'brakeman',                         :require => false
+  gem 'capistrano', '~> 3.2.1',           :require => false
+  gem 'capistrano-bundler',               :require => false
+  gem 'capistrano-fiftyfive', '~> 0.9.0', :require => false
+  gem 'capistrano-rails',                 :require => false
+  gem 'guard', '>= 2.2.2',                :require => false
+  gem 'guard-livereload',                 :require => false
+  gem 'guard-rspec',                      :require => false
   gem 'letter_opener'
   gem 'quiet_assets'
   gem 'rack-livereload'
-  gem 'rb-fsevent',              :require => false
-  gem 'sshkit', '~> 1.5.0',      :require => false
-  gem 'terminal-notifier-guard', :require => false
-  gem 'thin',                    :require => false
+  gem 'rb-fsevent',                       :require => false
+  gem 'sshkit', '~> 1.5.0',               :require => false
+  gem 'terminal-notifier-guard',          :require => false
+  gem 'thin',                             :require => false
   gem 'xray-rails'
 
   # Other development gems to consider
