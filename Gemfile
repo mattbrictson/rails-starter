@@ -83,6 +83,7 @@ group :test do
   gem 'factory_girl_rails', :group => :development
   gem 'fuubar'
   gem 'launchy'
+  gem 'rspec', '~> 2.14.0'
   gem 'rspec-rails',        :group => :development
 
   # Other test gems to consider
