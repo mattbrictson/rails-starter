@@ -87,6 +87,16 @@ To install the Qt libraries, [follow these instructions][qt-instructions]. Homeb
 
 **Protip:** Install [this handy bash script][r] to consolidate `rails` and `rake` into a single `r` shortcut.
 
+### Optional: install pre-commit
+
+[pre-commit][] is a nice utility that runs helpful checks on code you are committing via git. The rails-starter contains a `config/pre_commit.yml` file with a recommended configuration. To activate pre-commit on your project:
+
+1. `gem install pre-commit`
+2. `rbenv rehash`
+3. `pre-commit install`
+
+This installs a hook that will automatically run whenever you commit. You’re done!
+
 
 ## Using the provided Capistrano 3.x recipes
 
@@ -135,4 +145,5 @@ Don't forget to `git push` your code so that capistrano can deploy it. Make sure
 [SimpleForm]:https://github.com/plataformatec/simple_form
 [bootstrap-examples]:http://simple-form-bootstrap.plataformatec.com.br/articles/new
 [Devise]:http://devise.plataformatec.com.br
+[pre-commit]:http://jish.github.io/pre-commit/
 [cap-55]:https://github.com/55minutes/capistrano-fiftyfive/#readme
