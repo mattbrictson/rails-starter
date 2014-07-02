@@ -56,6 +56,7 @@ group :development do
   gem 'quiet_assets'
   gem 'rack-livereload'
   gem 'rb-fsevent',                        :require => false
+  gem 'scss-lint',                         :require => false
   gem 'spring'
   gem 'spring-commands-rspec'
   gem 'sshkit', '~> 1.5.0',                :require => false
