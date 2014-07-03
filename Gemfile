@@ -16,7 +16,7 @@ gem 'jquery-rails'
 gem 'marco-polo',        '~> 1.0'
 gem 'normalize-rails',   '~> 3.0.0'
 gem 'pg'
-gem 'rails',             '4.0.6'
+gem 'rails',             '4.0.8'
 gem 'sass-rails',        '~> 4.0.2'
 gem 'secure_headers'
 gem 'turbolinks'
@@ -47,21 +47,21 @@ group :development do
   gem 'annotate', '>=2.5.0'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'brakeman',                         :require => false
-  gem 'capistrano', '~> 3.2.1',           :require => false
-  gem 'capistrano-bundler',               :require => false
-  gem 'capistrano-fiftyfive', '~> 0.9.0', :require => false
-  gem 'capistrano-rails',                 :require => false
-  gem 'guard', '>= 2.2.2',                :require => false
-  gem 'guard-livereload',                 :require => false
-  gem 'guard-rspec',                      :require => false
+  gem 'brakeman',                          :require => false
+  gem 'capistrano', '~> 3.2.1',            :require => false
+  gem 'capistrano-bundler',                :require => false
+  gem 'capistrano-fiftyfive', '~> 0.10.0', :require => false
+  gem 'capistrano-rails',                  :require => false
+  gem 'guard', '>= 2.2.2',                 :require => false
+  gem 'guard-livereload',                  :require => false
+  gem 'guard-rspec',                       :require => false
   gem 'letter_opener'
   gem 'quiet_assets'
   gem 'rack-livereload'
-  gem 'rb-fsevent',                       :require => false
-  gem 'sshkit', '~> 1.5.0',               :require => false
-  gem 'terminal-notifier-guard',          :require => false
-  gem 'thin',                             :require => false
+  gem 'rb-fsevent',                        :require => false
+  gem 'sshkit', '~> 1.5.0',                :require => false
+  gem 'terminal-notifier-guard',           :require => false
+  gem 'thin',                              :require => false
   gem 'xray-rails'
 
   # Other development gems to consider
