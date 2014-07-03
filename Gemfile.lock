@@ -60,7 +60,7 @@ GEM
     capistrano-bundler (1.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
-    capistrano-fiftyfive (0.9.1)
+    capistrano-fiftyfive (0.10.0)
       capistrano (>= 3.2.1)
       colorize
       sshkit (>= 1.4.0)
@@ -291,7 +291,7 @@ DEPENDENCIES
   brakeman
   capistrano (~> 3.2.1)
   capistrano-bundler
-  capistrano-fiftyfive (~> 0.9.0)
+  capistrano-fiftyfive (~> 0.10.0)
   capistrano-rails
   capybara
   capybara-webkit
