@@ -16,8 +16,8 @@ gem 'jquery-rails'
 gem 'marco-polo',        '~> 1.0'
 gem 'normalize-rails',   '~> 3.0.0'
 gem 'pg'
-gem 'rails',             '4.0.8'
-gem 'sass-rails',        '~> 4.0.2'
+gem 'rails',             '4.1.4'
+gem 'sass-rails',        '~> 4.0.3'
 gem 'secure_headers'
 gem 'turbolinks'
 gem 'uglifier',          '>= 1.3.0'
@@ -28,10 +28,9 @@ gem 'uglifier',          '>= 1.3.0'
 # gem 'dragonfly'
 # gem 'facets', :require => false
 # gem 'friendly_id'
-# gem 'jbuilder', '~> 1.2'
+# gem 'jbuilder', '~> 2.0'
 # gem 'jquery-ui-rails'
 # gem 'kaminari'
-# gem 'mail_view'
 # gem 'neat'
 # gem 'pundit'
 # gem 'rack-mini-profiler'
@@ -59,6 +58,7 @@ group :development do
   gem 'quiet_assets'
   gem 'rack-livereload'
   gem 'rb-fsevent',                        :require => false
+  gem 'spring'
   gem 'sshkit', '~> 1.5.0',                :require => false
   gem 'terminal-notifier-guard',           :require => false
   gem 'thin',                              :require => false
