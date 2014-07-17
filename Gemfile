@@ -57,6 +57,7 @@ group :development do
   gem 'rack-livereload'
   gem 'rb-fsevent',                        :require => false
   gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'sshkit', '~> 1.5.0',                :require => false
   gem 'terminal-notifier-guard',           :require => false
   gem 'thin',                              :require => false
