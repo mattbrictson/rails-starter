@@ -20,7 +20,6 @@ gem 'rails',             '4.1.4'
 gem 'sass-rails',        '~> 4.0.3'
 gem 'secure_headers'
 gem 'turbolinks'
-gem 'uglifier',          '>= 1.3.0'
 
 # Other gems to consider
 # gem 'activeadmin', '0.6.0' # `rails g active_admin:assets` when upgrading
@@ -37,6 +36,7 @@ gem 'uglifier',          '>= 1.3.0'
 # gem 'redcarpet'
 # gem 'select2-rails'
 # gem 'state_machine'
+# gem 'uglifier', '>= 1.3.0'
 
 
 # Gems that facilitate development but are not required to run the app.
