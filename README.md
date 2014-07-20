@@ -71,8 +71,8 @@ To install the Qt libraries, [follow these instructions][qt-instructions]. Homeb
 
 ### Set up your local configuration
 
-1. Run `cp example.env .env` to make a local version of the app settings.
-2. Run `cp config/database.example.yml config/database.yml` to make a local version of the database config.
+1. Run `cp {example,}.env` to make a local version of the app settings.
+2. Run `cp config/database{.example,}.yml` to make a local version of the database config.
 
 ### Create the database
 
