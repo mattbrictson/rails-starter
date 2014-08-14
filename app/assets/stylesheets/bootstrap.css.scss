@@ -6,8 +6,10 @@
 
 // First import our own global variables. This allows us to override the
 // defaults in Bootstrap if we want.
-
 @import "globals/variables";
+
+// Sprockets compatibility
+@import "bootstrap-sprockets";
 
 // ----- Bootstrap modules -----
 
@@ -15,9 +17,10 @@
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
-// Reset
+// Reset and dependencies
 @import "bootstrap/normalize";
 @import "bootstrap/print";
+@import "bootstrap/glyphicons";
 
 // Core CSS
 @import "bootstrap/scaffolding";
@@ -30,7 +33,6 @@
 
 // Components
 @import "bootstrap/component-animations";
-@import "bootstrap/glyphicons";
 @import "bootstrap/dropdowns";
 @import "bootstrap/button-groups";
 @import "bootstrap/input-groups";
@@ -48,6 +50,7 @@
 @import "bootstrap/media";
 @import "bootstrap/list-group";
 @import "bootstrap/panels";
+@import "bootstrap/responsive-embed";
 @import "bootstrap/wells";
 @import "bootstrap/close";
 
