@@ -4,12 +4,12 @@
 
 <table class="table table-bordered">
   <tbody>
-  <% attributes.reject(&:password_digest?).each do |attribute| %>
+<% attributes.reject(&:password_digest?).each do |attribute| -%>
     <tr>
       <th class="col-sm-2"><%= attribute.human_name %></th>
       <td><%%= @<%= singular_table_name %>.<%= attribute.name %> %></td>
     </tr>
-  <% end %>
+<% end -%>
   </tbody>
 </table>
 
