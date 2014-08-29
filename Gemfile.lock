@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/bootstrap-ruby/rails-bootstrap-forms.git
-  revision: e21a746661d851e38b5f8545af1a2eaa81c4a27c
+  revision: 82a9ae3efb11cdcd7c2a371dc3424a15f283308b
   specs:
     bootstrap_form (2.1.1)
 
@@ -38,12 +38,13 @@ GEM
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
     arel (5.0.1.20140414130214)
-    autoprefixer-rails (2.2.0.20140804)
+    autoprefixer-rails (3.0.1.20140826)
       execjs
     bcrypt (3.1.7)
-    better_errors (1.1.0)
+    better_errors (2.0.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.2.0.1)
@@ -95,7 +96,7 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.7.1)
+    coffee-script-source (1.8.0)
     colorize (0.7.3)
     daemons (1.1.9)
     database_cleaner (1.3.0)
@@ -122,7 +123,7 @@ GEM
       railties (>= 3.0.0)
     fastercsv (1.5.5)
     ffi (1.9.3)
-    font-awesome-rails (4.1.0.0)
+    font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
     fuubar (1.3.3)
@@ -168,7 +169,7 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.6.0)
-    minitest (5.4.0)
+    minitest (5.4.1)
     multi_json (1.10.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -232,7 +233,7 @@ GEM
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
     ruby-progressbar (1.5.1)
-    ruby2ruby (2.1.1)
+    ruby2ruby (2.1.2)
       ruby_parser (~> 3.1)
       sexp_processor (~> 4.0)
     ruby_parser (3.5.0)
@@ -279,7 +280,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.2.2)
+    turbolinks (2.3.0)
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
