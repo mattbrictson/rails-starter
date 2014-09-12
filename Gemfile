@@ -42,6 +42,7 @@ gem 'turbolinks'
 #
 group :development do
   gem 'annotate', '>=2.5.0'
+  gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'brakeman',                          :require => false
