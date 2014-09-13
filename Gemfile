@@ -44,12 +44,13 @@ gem 'turbolinks'
 #
 group :development do
   gem 'annotate', '>=2.5.0'
+  gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'brakeman',                          :require => false
   gem 'capistrano', '~> 3.2.1',            :require => false
   gem 'capistrano-bundler',                :require => false
-  gem 'capistrano-fiftyfive', '~> 0.11.0', :require => false
+  gem 'capistrano-fiftyfive', '~> 0.12.0', :require => false
   gem 'capistrano-rails',                  :require => false
   gem 'guard', '>= 2.2.2',                 :require => false
   gem 'guard-livereload',                  :require => false
