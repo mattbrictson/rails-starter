@@ -33,26 +33,21 @@ By using this template, you’ll hit the ground running with best practices for 
 
 More on our blog:
 
-* [Rails OS X Developer Guide – Installing an rbenv-based Rails stack on Mountain Lion][osx-rails]
 * [Lightning-Fast Sass Reloading in Rails 3.2][sass-reloading]
 * [SMACSS and Rails – A Styleguide for the Asset Pipeline][smacss-rails]
 
 
+## Prerequisites
+
+This project requires:
+
+* Ruby 2.1.2, preferably managed using [rbenv][]
+* Qt (in order to build the [capybara-webkit][] gem)
+
+For a complete Ruby development environment, please follow our blog post: [Rails OS X Developer Guide – Installing an rbenv-based Rails stack on Mavericks and Mountain Lion][osx-rails].
+
+
 ## Getting started
-
-### Install rbenv
-
-We recommend [rbenv][] and [ruby-build][] for managing Ruby installations. This template currently uses Ruby 2.1.2.
-
-1. Install rbenv into `~/.rbenv` using the fantastic [rbenv-installer][] script.
-2. Run `rbenv install 2.1.2` (this will take several minutes).
-3. Optional: make 2.1.2 your default ruby by running `rbenv global 2.1.2`.
-
-### Install Qt
-
-This starter uses the [capybara-webkit][] gem, which requires the Qt libraries (version 4.8 or higher). These libraries aren't installed out of the box on most systems, including Mac OS X.
-
-To install the Qt libraries, [follow these instructions][qt-instructions]. Homebrew is the easiest option on the Mac.
 
 ### Create a Rails project from the template
 
@@ -60,32 +55,19 @@ To install the Qt libraries, [follow these instructions][qt-instructions]. Homeb
 2. Globally replace `rails-starter` and `RailsStarter` with the desired name of your project.
 3. `cd` into the project and run `git init && git add . && git commit -m "init"` to initialize a git repository.
 
-### Bundle the required gems
+### bin/setup
 
-1. Install bundler: `gem install bundler`
-2. Run `rbenv rehash`.
-4. Run `bundle install`
-5. Once more, run `rbenv rehash`.
+Run the `bin/setup` script. This script will:
 
-**Protip:** Install [rubygems-bundler][] so you won’t need to use `bundle exec` all the time. *Don’t forget to reinstall it whenever you install a new version of Ruby.*
-
-### Set up your local configuration
-
-1. Run `cp {example,}.env` to make a local version of the app settings.
-2. Run `cp config/database{.example,}.yml` to make a local version of the database config.
-
-### Create the database
-
-1. Run `rake db:create` to initialize the database (make sure postgres is started first).
-2. Run `rake db:migrate`.
-3. Commit the generated schema: `git add db && git commit -m "Create schema with db:migrate"`
+* Check you have the required Ruby version
+* Install gems using Bundler
+* Create local copies of `.env` and `database.yml`
+* Create, migrate, and seed the database
 
 ### Run it!
 
 1. Run `rake spec` to make sure everything works.
 2. Run `rails s` to start the app.
-
-**Protip:** Install [this handy bash script][r] to consolidate `rails` and `rake` into a single `r` shortcut.
 
 
 ## Using the provided Capistrano 3.x recipes
@@ -124,11 +106,7 @@ Don't forget to `git push` your code so that capistrano can deploy it. Make sure
 [SMACSS]:http://smacss.com
 [smacss-rails]:http://blog.55minutes.com/2013/01/smacss-and-rails/
 [rbenv]:https://github.com/sstephenson/rbenv
-[ruby-build]:https://github.com/sstephenson/ruby-build
-[rbenv-installer]:https://github.com/fesplugas/rbenv-installer
 [capybara-webkit]:https://github.com/thoughtbot/capybara-webkit
-[qt-instructions]:https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
-[rubygems-bundler]:https://github.com/mpapis/rubygems-bundler
 [master-zip]:https://github.com/55minutes/rails-starter/archive/master.zip
 [bootstrap-zip]:https://github.com/55minutes/rails-starter/archive/bootstrap.zip
 [r]:http://blog.55minutes.com/post/15353228566/invoke-rails-and-rake-faster-and-with-fewer-mistakes
