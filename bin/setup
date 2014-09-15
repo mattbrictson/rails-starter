@@ -11,6 +11,7 @@ def setup!
     copy "config/database.example.yml"
     test_local_env_contains_required_keys
     run  "bin/rake db:create"
+    run  "bin/rake db:create RAILS_ENV=test"
     run  "bin/rake db:migrate"
     run  "bin/rake db:seed"
   end
