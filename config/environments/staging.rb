@@ -9,4 +9,5 @@ Rails.application.configure do
     host: 'staging.rails-starter.com',
     protocol: 'https'
   }
+  config.action_mailer.asset_host = "https://staging.rails-starter.com"
 end
