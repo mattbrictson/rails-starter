@@ -41,7 +41,7 @@ More on our blog:
 
 This project requires:
 
-* Ruby 2.1.2, preferably managed using [rbenv][]
+* Ruby 2.1.3, preferably managed using [rbenv][]
 * Qt (in order to build the [capybara-webkit][] gem)
 
 For a complete Ruby development environment, please follow our blog post: [Rails OS X Developer Guide – Installing an rbenv-based Rails stack on Mavericks and Mountain Lion][osx-rails].
