@@ -27,7 +27,7 @@
     <%= csrf_meta_tags %>
 
     <title>
-      <%= yield(:title) + " – " if content_for?(:title) %>
+      <%= strip_tags(yield(:title)) + " – " if content_for?(:title) %>
       RailsStarter
     </title>
   </head>
