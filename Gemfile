@@ -65,7 +65,6 @@ group :development do
   gem 'xray-rails'
 
   # Other development gems to consider
-  # gem 'debugger'
   # gem 'guard-shell', :require => false
   # gem 'license_finder', :require => false
   # gem 'rails-erd'
