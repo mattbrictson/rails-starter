@@ -89,7 +89,6 @@ group :test do
   # Other test gems to consider
   # gem 'capybara-email'
   # gem 'shoulda-matchers'
-  # gem 'timecop'
 end
 
 
