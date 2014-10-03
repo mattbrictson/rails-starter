@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/bootstrap-ruby/rails-bootstrap-forms.git
-  revision: 82a9ae3efb11cdcd7c2a371dc3424a15f283308b
+  revision: 5d79fae23821942f5ded7f799ed2693127dae36f
   specs:
     bootstrap_form (2.1.1)
 
@@ -38,7 +38,7 @@ GEM
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
     arel (5.0.1.20140414130214)
-    autoprefixer-rails (3.0.1.20140826)
+    autoprefixer-rails (3.1.0.20140911)
       execjs
     awesome_print (1.2.0)
     bcrypt (3.1.7)
@@ -72,14 +72,15 @@ GEM
     capistrano-bundler (1.1.3)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
-    capistrano-fiftyfive (0.13.0)
+    capistrano-fiftyfive (0.15.0)
       capistrano (>= 3.2.1)
       colorize
+      highline
       sshkit (>= 1.4.0)
     capistrano-rails (1.1.2)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
-    capybara (2.4.1)
+    capybara (2.4.3)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
@@ -123,7 +124,7 @@ GEM
       factory_girl (~> 4.4.0)
       railties (>= 3.0.0)
     fastercsv (1.5.5)
-    ffi (1.9.3)
+    ffi (1.9.5)
     font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
@@ -136,7 +137,7 @@ GEM
       lumberjack (~> 1.0)
       pry (>= 0.9.12)
       thor (>= 0.18.1)
-    guard-livereload (2.3.0)
+    guard-livereload (2.3.1)
       em-websocket (~> 0.5)
       guard (~> 2.0)
       multi_json (~> 1.8)
@@ -159,7 +160,7 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.2.0)
       launchy (~> 2.2)
-    listen (2.7.9)
+    listen (2.7.11)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -170,7 +171,7 @@ GEM
     method_source (0.8.2)
     mime-types (2.3)
     mini_portile (0.6.0)
-    minitest (5.4.1)
+    minitest (5.4.2)
     multi_json (1.10.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -232,8 +233,8 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
-    ruby-progressbar (1.5.1)
-    ruby2ruby (2.1.2)
+    ruby-progressbar (1.6.0)
+    ruby2ruby (2.1.3)
       ruby_parser (~> 3.1)
       sexp_processor (~> 4.0)
     ruby_parser (3.5.0)
@@ -269,16 +270,16 @@ GEM
     temple (0.6.8)
     terminal-notifier-guard (1.5.3)
     terminal-table (1.4.5)
-    thin (1.6.2)
-      daemons (>= 1.0.9)
-      eventmachine (>= 1.0.0)
-      rack (>= 1.0.0)
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    timers (4.0.0)
+    timers (4.0.1)
       hitimes
-    turbolinks (2.3.0)
+    turbolinks (2.4.0)
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -308,7 +309,7 @@ DEPENDENCIES
   brakeman
   capistrano (~> 3.2.1)
   capistrano-bundler
-  capistrano-fiftyfive (~> 0.13.0)
+  capistrano-fiftyfive (~> 0.15.0)
   capistrano-rails
   capybara
   capybara-webkit
