@@ -1,4 +1,22 @@
-# 55minutes/rails-starter
+# This repository is no longer maintained.
+
+**I've stopped maintaining this project after reaching Rails 4.1.6. For new versions of Rails, and for my latest Rails configuration suggestions, please use [mattbrictson/rails-template](https://github.com/mattbrictson/rails-template).**
+
+I discovered that using this repo in my own projects was becoming tedious and error-prone, due to the manual find-and-replace steps needed to start a new project. To fix that, I've created a new project called [mattbrictson/rails-template](https://github.com/mattbrictson/rails-template). It sets out to accomplish similar goals, but does so in a much more automated way, using Rails application templates and Thor actions.
+
+As a result, I am no longer maintaining rails-starter.
+
+For my latest Rails application boilerplate, please visit my new project:
+
+<https://github.com/mattbrictson/rails-template>
+
+*--Matt*
+
+
+<hr>
+
+
+# mattbrictson/rails-starter
 
 **A simple template for starting new Rails 4 projects.**
 
@@ -31,7 +49,7 @@ By using this template, you’ll hit the ground running with best practices for 
 * `.env` for storing encryption keys and secret tokens safely outside of source control
 * An easy way to add Twitter Bootstrap, should you choose to do so (use the `bootstrap` branch)
 
-More on our blog:
+More on my blog:
 
 * [Lightning-Fast Sass Reloading in Rails 3.2][sass-reloading]
 * [SMACSS and Rails – A Styleguide for the Asset Pipeline][smacss-rails]
@@ -44,7 +62,7 @@ This project requires:
 * Ruby 2.1.3, preferably managed using [rbenv][]
 * Qt (in order to build the [capybara-webkit][] gem)
 
-For a complete Ruby development environment, please follow our blog post: [Rails OS X Developer Guide – Installing an rbenv-based Rails stack on Mavericks and Mountain Lion][osx-rails].
+For a complete Ruby development environment, please follow our my post: [Rails OS X Setup Guide][osx-rails].
 
 
 ## Getting started
@@ -110,17 +128,17 @@ Don't forget to `git push` your code so that capistrano can deploy it. Make sure
 
 [dotenv]:https://github.com/bkeepers/dotenv
 [Postmark]:https://postmarkapp.com
-[osx-rails]:http://blog.55minutes.com/2013/09/rails-os-x-install-guide/
-[sass-reloading]:http://blog.55minutes.com/2013/01/lightning-fast-sass-reloading-in-rails-32/
+[osx-rails]:https://mattbrictson.com/rails-osx-setup-guide
+[sass-reloading]:https://mattbrictson.com/lightning-fast-sass-reloading-in-rails
 [SMACSS]:http://smacss.com
-[smacss-rails]:http://blog.55minutes.com/2013/01/smacss-and-rails/
+[smacss-rails]:https://mattbrictson.com/smacss-and-rails
 [rbenv]:https://github.com/sstephenson/rbenv
 [capybara-webkit]:https://github.com/thoughtbot/capybara-webkit
-[master-zip]:https://github.com/55minutes/rails-starter/archive/master.zip
-[bootstrap-zip]:https://github.com/55minutes/rails-starter/archive/bootstrap.zip
-[r]:http://blog.55minutes.com/post/15353228566/invoke-rails-and-rake-faster-and-with-fewer-mistakes
+[master-zip]:https://github.com/mattbrictson/rails-starter/archive/master.zip
+[bootstrap-zip]:https://github.com/mattbrictson/rails-starter/archive/bootstrap.zip
+[r]:https://mattbrictson.com/invoke-rails-and-rake-faster-and-with-fewer-mistakes
 [SimpleForm]:https://github.com/plataformatec/simple_form
 [bootstrap-examples]:http://simple-form-bootstrap.plataformatec.com.br/articles/new
 [Devise]:http://devise.plataformatec.com.br
 [pre-commit]:http://jish.github.io/pre-commit/
-[cap-55]:https://github.com/55minutes/capistrano-fiftyfive/#readme
+[cap-55]:https://github.com/mattbrictson/capistrano-fiftyfive/#readme
